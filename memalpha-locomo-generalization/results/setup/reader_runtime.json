@@ -1,0 +1,58 @@
+{
+  "causal_limit": "Both transport flags were changed together; the individual cause of the default-path stall is not isolated.",
+  "diagnosis": "The default four-GPU reader stopped making progress during NCCL initialization before weight loading. With P2P and IB disabled, NCCL used shared-memory transport, loaded the same model, and completed all ten synthetic answers.",
+  "environment": {
+    "NCCL_DEBUG": "INFO",
+    "NCCL_IB_DISABLE": "1",
+    "NCCL_P2P_DISABLE": "1"
+  },
+  "final_owned_pids": [],
+  "gpus": [
+    "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd",
+    "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567",
+    "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9",
+    "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+  ],
+  "method_sources": {
+    "bridge.py": "0ad20d89cb2bd12f41249b52cbc21a3455164cf59b499d0a5bda8783dd2c3425",
+    "common.py": "fee1a7b3c591596fb7a58119c69d07cd7ea8edf7d54c82bf64c864c73de9f0aa",
+    "compatibility.patch": "4d7f1824555b5fda000f5849938e3b74d492165b7384c1939996c93890a1dfef",
+    "config.json": "1d4081b5eb89b90a08c929426da40eb40b00c022fd58b54c995f545d0a1ccbaf",
+    "locomo.py": "35ab06b0a36659b495ac983d2365eae66387c7c3bd874481a15a2235d880c5db",
+    "run.py": "47ac693530695240a840b29784925b24954762871d56de8becf632f597ff97a8",
+    "upstream_commit": "9c0e1f6482f8ea7a322012a8155247966285946f",
+    "upstream_worktree_diff": "4d7f1824555b5fda000f5849938e3b74d492165b7384c1939996c93890a1dfef",
+    "vendor/locomo_evaluation.py": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+    "vendor/locomo_gpt_utils.py": "5fc977375878199735acd28fba5ae6f4d657fa0e000c0d2918a90c07b6035793"
+  },
+  "model_prompt_seed_changes": false,
+  "node": "gpu-04",
+  "operations_sha256": "793c7c6112be017737060cffb579e543a5cc978b0e9d8074296c218200e66a4f",
+  "operations_version": "1.1",
+  "physical_processes_after_release": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b, 3368366\n",
+  "prior_failure_receipts": [
+    "results/operations/runtime_compat/reader_nccl_init_v1.json",
+    "results/operations/runtime_compat/reader_nccl_init_v1_exit.json"
+  ],
+  "state": "validated",
+  "successful_attempt": "20260914T150033Z_8c392580",
+  "successful_operation": "smoke_reader_nccl_socket",
+  "successful_operation_receipt": "results/operations/smoke_reader_nccl_socket/attempts/20260914T150033Z_8c392580/exit.json",
+  "synthetic_answer_count": 10,
+  "synthetic_answer_sha256": {
+    "runs/synthetic_smoke/memalpha/answers/synthetic-1/00000.json": "35c7d0d67358af79264cad3634124ad377fd90497e941440433fc7f9e0b809b9",
+    "runs/synthetic_smoke/memalpha/answers/synthetic-1/00001.json": "ccc989d98e65f28696d958772bdf63dacbff6978c3e679b0653ec46040ff2890",
+    "runs/synthetic_smoke/memalpha/answers/synthetic-1/00002.json": "2e50257f818949d8a8cb938d161e45e165307bd1a43b981e473ca374b6fc1fe3",
+    "runs/synthetic_smoke/memalpha/answers/synthetic-1/00003.json": "c0188bf48b7a37fb3b2d75eca92410e8151bd3bbe03d1afe059611c32b9d76b6",
+    "runs/synthetic_smoke/memalpha/answers/synthetic-1/00004.json": "305b8d475bd456bb1fd14375f6dade5d9e2420c4fd9e674d70d1baa926c5e81b",
+    "runs/synthetic_smoke/qwen3_base/answers/synthetic-1/00000.json": "518fce45f56ce0b852669d75ba2d5a5ec0c0695d76cb4b518a472239d21d056d",
+    "runs/synthetic_smoke/qwen3_base/answers/synthetic-1/00001.json": "1c86d8b5b40be28497cab7bf60fe4b154b80fcd169cb6a497bd2c4b5fb0e9993",
+    "runs/synthetic_smoke/qwen3_base/answers/synthetic-1/00002.json": "c530f3633ecab0273e50fe703f10dd1e09dc7902444101c713eda70d2619ea8a",
+    "runs/synthetic_smoke/qwen3_base/answers/synthetic-1/00003.json": "547d53c378c2fce0da4ca2a103875edbbb7bdfc08de2354870fb4a113ebef3c8",
+    "runs/synthetic_smoke/qwen3_base/answers/synthetic-1/00004.json": "c41343e8b5d01301e0b227dee580fa9e27dd84f90260bfe9ed9961dbd3c22231"
+  },
+  "tensor_parallel_size": 4,
+  "training_performed": false,
+  "validated_utc": "2026-09-14T15:07:04.521296+00:00",
+  "worker_log_sha256": "92a06795e0e770ea7c8641c253871fc5df51f70fb32b751aa6f1691735eb9c73"
+}

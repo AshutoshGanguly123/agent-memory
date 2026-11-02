@@ -1,0 +1,111 @@
+[
+  {
+    "chunks": [
+      {
+        "chunk_index": 0,
+        "segments": [
+          {
+            "char_end": 39,
+            "char_start": 0,
+            "has_caption": false,
+            "session": "session_1",
+            "source_id": "D1:1",
+            "source_text_length": 39,
+            "speaker": "Maya",
+            "text": "My dog is named Pixel. I live in Paris.",
+            "timestamp": "10:00 am on 1 January, 2024"
+          },
+          {
+            "char_end": 44,
+            "char_start": 0,
+            "has_caption": false,
+            "session": "session_1",
+            "source_id": "D1:2",
+            "source_text_length": 44,
+            "speaker": "Leo",
+            "text": "I live in Rome. I enjoy painting landscapes.",
+            "timestamp": "10:00 am on 1 January, 2024"
+          }
+        ],
+        "source_ids": [
+          "D1:1",
+          "D1:2"
+        ],
+        "text": "[Dialogue at timestamp 10:00 am on 1 January, 2024]\n<Maya>My dog is named Pixel. I live in Paris.\n<Leo>I live in Rome. I enjoy painting landscapes.",
+        "token_count": 49
+      },
+      {
+        "chunk_index": 1,
+        "segments": [
+          {
+            "char_end": 60,
+            "char_start": 0,
+            "has_caption": false,
+            "session": "session_2",
+            "source_id": "D2:1",
+            "source_text_length": 60,
+            "speaker": "Maya",
+            "text": "Yesterday I adopted a cat named Luna. My dog Pixel is happy.",
+            "timestamp": "10:00 am on 3 January, 2024"
+          },
+          {
+            "char_end": 90,
+            "char_start": 0,
+            "has_caption": true,
+            "session": "session_2",
+            "source_id": "D2:2",
+            "source_text_length": 90,
+            "speaker": "Leo",
+            "text": "I bought blue paint for a landscape yesterday.\n[Image caption: A blue landscape painting.]",
+            "timestamp": "10:00 am on 3 January, 2024"
+          }
+        ],
+        "source_ids": [
+          "D2:1",
+          "D2:2"
+        ],
+        "text": "[Dialogue at timestamp 10:00 am on 3 January, 2024]\n<Maya>Yesterday I adopted a cat named Luna. My dog Pixel is happy.\n<Leo>I bought blue paint for a landscape yesterday.\n[Image caption: A blue landscape painting.]",
+        "token_count": 60
+      },
+      {
+        "chunk_index": 2,
+        "segments": [
+          {
+            "char_end": 54,
+            "char_start": 0,
+            "has_caption": false,
+            "session": "session_3",
+            "source_id": "D3:1",
+            "source_text_length": 54,
+            "speaker": "Maya",
+            "text": "Pixel and Luna are my two pets. Luna loves the garden.",
+            "timestamp": "10:00 am on 5 January, 2024"
+          },
+          {
+            "char_end": 34,
+            "char_start": 0,
+            "has_caption": false,
+            "session": "session_3",
+            "source_id": "D3:2",
+            "source_text_length": 34,
+            "speaker": "Leo",
+            "text": "My new landscape painting is blue.",
+            "timestamp": "10:00 am on 5 January, 2024"
+          }
+        ],
+        "source_ids": [
+          "D3:1",
+          "D3:2"
+        ],
+        "text": "[Dialogue at timestamp 10:00 am on 5 January, 2024]\n<Maya>Pixel and Luna are my two pets. Luna loves the garden.\n<Leo>My new landscape painting is blue.",
+        "token_count": 49
+      }
+    ],
+    "input_tokens": 158,
+    "num_captions": 1,
+    "num_sessions": 3,
+    "num_turns": 6,
+    "sample_id": "synthetic-1",
+    "unsegmented_input_tokens": 158
+  }
+]

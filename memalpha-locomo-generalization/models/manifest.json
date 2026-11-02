@@ -1,0 +1,288 @@
+{
+  "created_utc": "2026-09-14T14:50:55.548470+00:00",
+  "models": {
+    "memalpha": {
+      "alias": "memalpha",
+      "completed_utc": "2026-09-14T14:42:33.696574+00:00",
+      "downloaded_utc": "2026-09-14T14:42:17.079404+00:00",
+      "files": {
+        "README.md": {
+          "remote_lfs_sha256": null,
+          "sha256": "0336368f8274a5ed09f54cee8d56a851ecee96026d9f391a6735762c16608a60",
+          "size": 5174
+        },
+        "added_tokens.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+          "size": 707
+        },
+        "config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "a40051c750bf08c0a5574b0532de460bcc1cdb8bf934fd096324712010bda4fc",
+          "size": 727
+        },
+        "generation_config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "81051cd3f6e77013827148d0b8a6ead93f8ac390d5ab805f849199f0af6a08db",
+          "size": 214
+        },
+        "merges.txt": {
+          "remote_lfs_sha256": null,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "size": 1671853
+        },
+        "model-00001-of-00002.safetensors": {
+          "remote_lfs_sha256": "c61187881385f2dac0096b0c4c275487b98372a9c1ff33b62e3794aac5126897",
+          "sha256": "c61187881385f2dac0096b0c4c275487b98372a9c1ff33b62e3794aac5126897",
+          "size": 4967215360
+        },
+        "model-00002-of-00002.safetensors": {
+          "remote_lfs_sha256": "5442f8bc27f05d98a9b42fcb07614cc2c73c0d374af06f4fbc59818082a81ea1",
+          "sha256": "5442f8bc27f05d98a9b42fcb07614cc2c73c0d374af06f4fbc59818082a81ea1",
+          "size": 3077766632
+        },
+        "model.safetensors.index.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "e36bba5af4706cfd22ecf7eedb5fd8f4d2559b92f2414b932651b9ed6495921a",
+          "size": 32819
+        },
+        "special_tokens_map.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+          "size": 613
+        },
+        "tokenizer.json": {
+          "remote_lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "size": 11422654
+        },
+        "tokenizer_config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "3c0884a30471f4f542dc89630f62a380bb70a341fafda826136a7be921fec7ea",
+          "size": 9762
+        },
+        "vocab.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "size": 2776833
+        }
+      },
+      "repo_id": "YuWangX/Memalpha-4B",
+      "revision": "8c5683d0196a846ef1048b1fd0d4f9c7196e22d6",
+      "started_utc": "2026-09-14T14:38:16.671624+00:00",
+      "state": "ready"
+    },
+    "qwen3_base": {
+      "alias": "qwen3_base",
+      "completed_utc": "2026-09-14T14:41:33.918533+00:00",
+      "downloaded_utc": "2026-09-14T14:41:16.878328+00:00",
+      "files": {
+        "LICENSE": {
+          "remote_lfs_sha256": null,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+          "size": 11343
+        },
+        "README.md": {
+          "remote_lfs_sha256": null,
+          "sha256": "71add1cd091c309b1cb1a6b943f2476eb2b004124b3bd1d32dcd0b24cc1abc47",
+          "size": 16857
+        },
+        "config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+          "size": 726
+        },
+        "generation_config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "size": 239
+        },
+        "merges.txt": {
+          "remote_lfs_sha256": null,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "size": 1671853
+        },
+        "model-00001-of-00003.safetensors": {
+          "remote_lfs_sha256": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+          "sha256": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+          "size": 3957900840
+        },
+        "model-00002-of-00003.safetensors": {
+          "remote_lfs_sha256": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+          "sha256": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+          "size": 3987450520
+        },
+        "model-00003-of-00003.safetensors": {
+          "remote_lfs_sha256": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1",
+          "sha256": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1",
+          "size": 99630640
+        },
+        "model.safetensors.index.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2",
+          "size": 32819
+        },
+        "tokenizer.json": {
+          "remote_lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "size": 11422654
+        },
+        "tokenizer_config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+          "size": 9732
+        },
+        "vocab.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "size": 2776833
+        }
+      },
+      "repo_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "started_utc": "2026-09-14T14:38:16.671747+00:00",
+      "state": "ready"
+    },
+    "reader": {
+      "alias": "reader",
+      "completed_utc": "2026-09-14T14:50:55.538074+00:00",
+      "downloaded_utc": "2026-09-14T14:48:50.061278+00:00",
+      "files": {
+        "LICENSE": {
+          "remote_lfs_sha256": null,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+          "size": 11343
+        },
+        "README.md": {
+          "remote_lfs_sha256": null,
+          "sha256": "0af37735eef45eb3b406f3d74952e6cbcbc180904dc68b73a31a690719a235da",
+          "size": 16636
+        },
+        "config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "97e295b63283935788fac5e4f8860862a56d4089538cafc93f0431f2ebe483bb",
+          "size": 728
+        },
+        "generation_config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "size": 239
+        },
+        "merges.txt": {
+          "remote_lfs_sha256": null,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "size": 1671853
+        },
+        "model-00001-of-00017.safetensors": {
+          "remote_lfs_sha256": "52562b2ff97b61764260273e71bf5b4cf8a66f569399398f26dec0300fcf1316",
+          "sha256": "52562b2ff97b61764260273e71bf5b4cf8a66f569399398f26dec0300fcf1316",
+          "size": 3957109648
+        },
+        "model-00002-of-00017.safetensors": {
+          "remote_lfs_sha256": "e26764b2c6878e3fb7198895fa833ec62838d84a19665e6abfbae43c6daf02b3",
+          "sha256": "e26764b2c6878e3fb7198895fa833ec62838d84a19665e6abfbae43c6daf02b3",
+          "size": 3900791760
+        },
+        "model-00003-of-00017.safetensors": {
+          "remote_lfs_sha256": "6c5ba7bed9c52bc121e75cbe8a7be46936d0006cc80f42a6d5886ed40b4c2a62",
+          "sha256": "6c5ba7bed9c52bc121e75cbe8a7be46936d0006cc80f42a6d5886ed40b4c2a62",
+          "size": 3900791760
+        },
+        "model-00004-of-00017.safetensors": {
+          "remote_lfs_sha256": "f736f6ac4d8c30866107fb1185a05b3c3cfce9717720082f466fa44e691bcec8",
+          "sha256": "f736f6ac4d8c30866107fb1185a05b3c3cfce9717720082f466fa44e691bcec8",
+          "size": 3900791800
+        },
+        "model-00005-of-00017.safetensors": {
+          "remote_lfs_sha256": "a52ed375c083209c54d42ac510afeb1fbb5af4f193be2dc7d103f665a0f212d3",
+          "sha256": "a52ed375c083209c54d42ac510afeb1fbb5af4f193be2dc7d103f665a0f212d3",
+          "size": 3900791800
+        },
+        "model-00006-of-00017.safetensors": {
+          "remote_lfs_sha256": "37fae28990b0e4a70228549d040c0393e87bee3820d59e58e47844974d8dff5b",
+          "sha256": "37fae28990b0e4a70228549d040c0393e87bee3820d59e58e47844974d8dff5b",
+          "size": 3900791800
+        },
+        "model-00007-of-00017.safetensors": {
+          "remote_lfs_sha256": "37776006aeaba29eca8bc73b2b963fe3477e1c2e3f6a27cb9527be75b905e1bf",
+          "sha256": "37776006aeaba29eca8bc73b2b963fe3477e1c2e3f6a27cb9527be75b905e1bf",
+          "size": 3900791800
+        },
+        "model-00008-of-00017.safetensors": {
+          "remote_lfs_sha256": "73e74e9129674fe330948005075d70ab4fa0b92b68fb220c5a693f9cea553730",
+          "sha256": "73e74e9129674fe330948005075d70ab4fa0b92b68fb220c5a693f9cea553730",
+          "size": 3900791800
+        },
+        "model-00009-of-00017.safetensors": {
+          "remote_lfs_sha256": "a044b3602a01bd8ea62ff51badf9cc038ab1d73d97399480e6a55b4c86fa7fa6",
+          "sha256": "a044b3602a01bd8ea62ff51badf9cc038ab1d73d97399480e6a55b4c86fa7fa6",
+          "size": 3900791800
+        },
+        "model-00010-of-00017.safetensors": {
+          "remote_lfs_sha256": "9966612ba7ecfc2cd2e592fb95224b86d743271ff88e172cc272a4b26382aa75",
+          "sha256": "9966612ba7ecfc2cd2e592fb95224b86d743271ff88e172cc272a4b26382aa75",
+          "size": 3900791800
+        },
+        "model-00011-of-00017.safetensors": {
+          "remote_lfs_sha256": "e2a058a0ac7d4b992b731c29221ecfb4b76b8a48d9004d0e8a62ba44f699845c",
+          "sha256": "e2a058a0ac7d4b992b731c29221ecfb4b76b8a48d9004d0e8a62ba44f699845c",
+          "size": 3900791800
+        },
+        "model-00012-of-00017.safetensors": {
+          "remote_lfs_sha256": "58a1aa89093fea07325f787072a468e3482a470ff4b7fe5ead5f749683907c40",
+          "sha256": "58a1aa89093fea07325f787072a468e3482a470ff4b7fe5ead5f749683907c40",
+          "size": 3900791800
+        },
+        "model-00013-of-00017.safetensors": {
+          "remote_lfs_sha256": "35f3381bab31a23370c37d922290aeecdf603418336058fb86fe42d8f51ac40c",
+          "sha256": "35f3381bab31a23370c37d922290aeecdf603418336058fb86fe42d8f51ac40c",
+          "size": 3900791800
+        },
+        "model-00014-of-00017.safetensors": {
+          "remote_lfs_sha256": "8713b062ddc178acf5917610b7f4b64eede833b2ea4aa37bd562dcf2f3a3339d",
+          "sha256": "8713b062ddc178acf5917610b7f4b64eede833b2ea4aa37bd562dcf2f3a3339d",
+          "size": 3900791800
+        },
+        "model-00015-of-00017.safetensors": {
+          "remote_lfs_sha256": "bec439d23931821a236d8f62fa79deecf5551bd25602278aa2ae0ce432b378cf",
+          "sha256": "bec439d23931821a236d8f62fa79deecf5551bd25602278aa2ae0ce432b378cf",
+          "size": 3900791800
+        },
+        "model-00016-of-00017.safetensors": {
+          "remote_lfs_sha256": "e569139fadd61fe7c8f9eb1c976d9a627cae48c57ddf228cfbd0593c59c64ff7",
+          "sha256": "e569139fadd61fe7c8f9eb1c976d9a627cae48c57ddf228cfbd0593c59c64ff7",
+          "size": 3900791800
+        },
+        "model-00017-of-00017.safetensors": {
+          "remote_lfs_sha256": "1f47c318fcd7797c0f85b4233cb754438b10e795b8bc874889090c416a94bd38",
+          "sha256": "1f47c318fcd7797c0f85b4233cb754438b10e795b8bc874889090c416a94bd38",
+          "size": 3055341992
+        },
+        "model.safetensors.index.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "bed42c6c55274bc08a1f616bceb3bcb84b3f02cb6584c573bd18c6519291ecd0",
+          "size": 58330
+        },
+        "tokenizer.json": {
+          "remote_lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "size": 11422654
+        },
+        "tokenizer_config.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+          "size": 9732
+        },
+        "vocab.json": {
+          "remote_lfs_sha256": null,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "size": 2776833
+        }
+      },
+      "repo_id": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "started_utc": "2026-09-14T14:38:16.671895+00:00",
+      "state": "ready"
+    }
+  }
+}

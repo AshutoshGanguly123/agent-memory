@@ -1,0 +1,227 @@
+{
+  "attempt": "20260914T150033Z_8c392580",
+  "child_pid": 3380672,
+  "command": [
+    "env",
+    "NCCL_P2P_DISABLE=1",
+    "NCCL_IB_DISABLE=1",
+    "NCCL_DEBUG=INFO",
+    ".venv/bin/python",
+    "run.py",
+    "answer",
+    "--synthetic"
+  ],
+  "cuda_mapping": [
+    {
+      "physical_index": 0,
+      "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+    },
+    {
+      "physical_index": 1,
+      "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+    },
+    {
+      "physical_index": 2,
+      "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+    },
+    {
+      "physical_index": 3,
+      "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+    }
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-09-14T15:04:28.456922+00:00",
+  "gpus": [
+    "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd",
+    "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567",
+    "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9",
+    "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+  ],
+  "last_resource_check": {
+    "cards": [
+      {
+        "free_mib": 1415.0,
+        "index": 0,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:01:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+      },
+      {
+        "free_mib": 2380.0,
+        "index": 1,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:21:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+      },
+      {
+        "free_mib": 2608.0,
+        "index": 2,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:41:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+      },
+      {
+        "free_mib": 2530.0,
+        "index": 3,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:61:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 4,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:81:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 5,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:A1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 6,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:C1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70"
+      },
+      {
+        "free_mib": 27053.0,
+        "index": 7,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:E1:00.0",
+        "pids": [
+          3368366
+        ],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b"
+      }
+    ],
+    "checked_utc": "2026-09-14T15:04:23.233017+00:00",
+    "host_available_bytes": 665515978752,
+    "node": "gpu-04"
+  },
+  "launcher_pid": 3380556,
+  "name": "smoke_reader_nccl_socket",
+  "node": "gpu-04",
+  "operations_sha256": "793c7c6112be017737060cffb579e543a5cc978b0e9d8074296c218200e66a4f",
+  "operations_version": "1.1",
+  "owned_pids": [],
+  "physical_inventory": {
+    "cards": [
+      {
+        "free_mib": 32236.0,
+        "index": 0,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:01:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 1,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:21:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 2,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:41:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 3,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:61:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 4,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:81:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 5,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:A1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 6,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:C1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70"
+      },
+      {
+        "free_mib": 27099.0,
+        "index": 7,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:E1:00.0",
+        "pids": [
+          3368366
+        ],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b"
+      }
+    ],
+    "checked_utc": "2026-09-14T15:00:34.319607+00:00",
+    "host_available_bytes": 666992054272,
+    "node": "gpu-04"
+  },
+  "started_utc": "2026-09-14T15:00:34.137122+00:00",
+  "state": "complete",
+  "stop_reason": null
+}

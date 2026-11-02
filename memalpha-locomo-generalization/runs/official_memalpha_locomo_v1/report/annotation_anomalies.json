@@ -1,0 +1,162 @@
+[
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "adversarial_row_has_answer"
+    ],
+    "arm": "memalpha",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(b) not mentioned in the conversation.",
+    "qa_index": 167,
+    "question": "Did Caroline make the black and white bowl in the photo?",
+    "raw_response": "(b) Not mentioned in the conversation.",
+    "sample_id": "conv-26",
+    "score": 1.0,
+    "status": "complete",
+    "strict_option": "b",
+    "strict_option_correct": true,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "adversarial_row_has_answer"
+    ],
+    "arm": "memalpha",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(b) yes.",
+    "qa_index": 178,
+    "question": "Is Oscar Melanie's pet?",
+    "raw_response": "(b) Yes.",
+    "sample_id": "conv-26",
+    "score": 0.0,
+    "status": "complete",
+    "strict_option": "b",
+    "strict_option_correct": false,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "distractor_matches_official_abstention_scorer"
+    ],
+    "arm": "memalpha",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(a) not mentioned in the conversation",
+    "qa_index": 79,
+    "question": "What temporary job did Jon take to cover expenses?",
+    "raw_response": "(a) Not mentioned in the conversation",
+    "sample_id": "conv-30",
+    "score": 1.0,
+    "status": "complete",
+    "strict_option": "a",
+    "strict_option_correct": true,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "distractor_matches_official_abstention_scorer"
+    ],
+    "arm": "memalpha",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(a) not mentioned in the conversation",
+    "qa_index": 103,
+    "question": "What temporary job did Gina take to cover expenses?",
+    "raw_response": "(a) Not mentioned in the conversation",
+    "sample_id": "conv-30",
+    "score": 1.0,
+    "status": "complete",
+    "strict_option": "a",
+    "strict_option_correct": true,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "adversarial_row_has_answer"
+    ],
+    "arm": "qwen3_base",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(b) not mentioned in the conversation.",
+    "qa_index": 167,
+    "question": "Did Caroline make the black and white bowl in the photo?",
+    "raw_response": "(b) Not mentioned in the conversation.",
+    "sample_id": "conv-26",
+    "score": 1.0,
+    "status": "complete",
+    "strict_option": "b",
+    "strict_option_correct": true,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "adversarial_row_has_answer"
+    ],
+    "arm": "qwen3_base",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(b) yes. short answer: no. oscar is caroline's pet.",
+    "qa_index": 178,
+    "question": "Is Oscar Melanie's pet?",
+    "raw_response": "(b) Yes. Short answer: No. Oscar is Caroline's pet.",
+    "sample_id": "conv-26",
+    "score": 0.0,
+    "status": "complete",
+    "strict_option": null,
+    "strict_option_correct": false,
+    "strict_option_interpretation": "unresolved"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "distractor_matches_official_abstention_scorer"
+    ],
+    "arm": "qwen3_base",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(a) not mentioned in the conversation",
+    "qa_index": 79,
+    "question": "What temporary job did Jon take to cover expenses?",
+    "raw_response": "(a) Not mentioned in the conversation",
+    "sample_id": "conv-30",
+    "score": 1.0,
+    "status": "complete",
+    "strict_option": "a",
+    "strict_option_correct": true,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  },
+  {
+    "adversarial_clean_eligible": false,
+    "anomaly": [
+      "distractor_matches_official_abstention_scorer"
+    ],
+    "arm": "qwen3_base",
+    "category": 5,
+    "category_name": "adversarial",
+    "legacy_parser_accepted_invalid_option": false,
+    "prediction": "(a) not mentioned in the conversation",
+    "qa_index": 103,
+    "question": "What temporary job did Gina take to cover expenses?",
+    "raw_response": "(a) Not mentioned in the conversation",
+    "sample_id": "conv-30",
+    "score": 1.0,
+    "status": "complete",
+    "strict_option": "a",
+    "strict_option_correct": true,
+    "strict_option_interpretation": "label_and_matching_option_text"
+  }
+]

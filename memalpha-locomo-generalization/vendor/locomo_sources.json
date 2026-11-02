@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/snap-research/locomo",
+  "commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+  "files": [
+    {
+      "upstream_path": "data/locomo10.json",
+      "path": "data/locomo10.json",
+      "url": "https://raw.githubusercontent.com/snap-research/locomo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/data/locomo10.json",
+      "sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4"
+    },
+    {
+      "upstream_path": "task_eval/evaluation.py",
+      "path": "vendor/locomo_evaluation.py",
+      "url": "https://raw.githubusercontent.com/snap-research/locomo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/evaluation.py",
+      "sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd"
+    },
+    {
+      "upstream_path": "task_eval/gpt_utils.py",
+      "path": "vendor/locomo_gpt_utils.py",
+      "url": "https://raw.githubusercontent.com/snap-research/locomo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/gpt_utils.py",
+      "sha256": "5fc977375878199735acd28fba5ae6f4d657fa0e000c0d2918a90c07b6035793"
+    }
+  ]
+}

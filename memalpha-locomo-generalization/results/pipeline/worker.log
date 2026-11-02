@@ -1,0 +1,85 @@
+{"state": "starting", "started_utc": "2026-09-14T15:10:39.805728+00:00"}
+{"stage": "memalpha", "state": "running", "operation": "full_memalpha_001", "dispatch": {"state": "running", "node": "gpu-04", "tmux_session": "memalpha_full_memalpha_001", "attempt": "20260914T151042Z_eb91fcd4", "gpus": ["GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"], "child_pid": 3387081, "previous_node_failures": []}}
+{"stage": "base", "state": "running", "operation": "full_base_001", "dispatch": {"state": "running", "node": "gpu-04", "tmux_session": "memalpha_full_base_001", "attempt": "20260914T151045Z_93a27de0", "gpus": ["GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"], "child_pid": 3387343, "previous_node_failures": []}}
+{"stage": "reader", "state": "running", "operation": "full_reader_001", "dispatch": {"state": "running", "node": "gpu-04", "tmux_session": "memalpha_full_reader_001", "attempt": "20260914T152935Z_889e57d8", "gpus": ["GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd", "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567", "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9", "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"], "child_pid": 3397314, "previous_node_failures": []}}
+{
+  "report": "/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/report/report.md",
+  "complete": true,
+  "metrics": {
+    "memalpha": {
+      "count": 1986,
+      "completed": 1986,
+      "overall_micro": 0.32550814145117085,
+      "category_macro": 0.2935966451329316,
+      "nonadversarial_micro": 0.18406439540391256,
+      "adversarial_strict": 0.7713004484304933,
+      "adversarial_clean_strict": 0.7714932126696833,
+      "adversarial_clean_count": 442,
+      "categories": {
+        "multi_hop": {
+          "count": 282,
+          "completed": 282,
+          "score": 0.16914209826307605
+        },
+        "temporal": {
+          "count": 321,
+          "completed": 321,
+          "score": 0.18113080394447234
+        },
+        "open_domain": {
+          "count": 96,
+          "completed": 96,
+          "score": 0.10454394831091579
+        },
+        "single_hop": {
+          "count": 841,
+          "completed": 841,
+          "score": 0.1992650298547139
+        },
+        "adversarial": {
+          "count": 446,
+          "completed": 446,
+          "score": 0.8139013452914798
+        }
+      }
+    },
+    "qwen3_base": {
+      "count": 1986,
+      "completed": 1986,
+      "overall_micro": 0.33764658486622284,
+      "category_macro": 0.31118751669801986,
+      "nonadversarial_micro": 0.20296501139241468,
+      "adversarial_strict": 0.7600896860986547,
+      "adversarial_clean_strict": 0.7601809954751131,
+      "adversarial_clean_count": 442,
+      "categories": {
+        "multi_hop": {
+          "count": 282,
+          "completed": 282,
+          "score": 0.20546132340070167
+        },
+        "temporal": {
+          "count": 321,
+          "completed": 321,
+          "score": 0.2318846599959546
+        },
+        "open_domain": {
+          "count": 96,
+          "completed": 96,
+          "score": 0.11474054620524567
+        },
+        "single_hop": {
+          "count": 841,
+          "completed": 841,
+          "score": 0.20116047092855618
+        },
+        "adversarial": {
+          "count": 446,
+          "completed": 446,
+          "score": 0.8026905829596412
+        }
+      }
+    }
+  }
+}
+{"state": "complete", "report": "/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/report/report.md"}

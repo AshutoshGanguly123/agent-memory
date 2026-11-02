@@ -1,0 +1,16 @@
+transformers==4.53.0
+tokenizers==0.21.4
+numpy==1.26.4
+sentence-transformers==3.3.1
+jsonschema==4.26.0
+lm-format-enforcer==0.11.3
+pandas==2.3.3
+matplotlib==3.10.9
+seaborn==0.13.2
+pytest==9.0.3
+nltk==3.9.1
+pydantic==2.9.2
+huggingface-hub==0.36.2
+safetensors==0.8.0
+scikit-learn==1.7.2
+psutil==7.2.2

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+models/weights/
+models/embeddings/
+models/hf_cache/
+models/failed_downloads/
+dataset/locomo10.json
+results/setup/
+results/operations/
+results/preflight/
+results/raw_results/
+results/insights/
+tools/
+benchmark/report_template/author_kit.zip
+*.incomplete-*

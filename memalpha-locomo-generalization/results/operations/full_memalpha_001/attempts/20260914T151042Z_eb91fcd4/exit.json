@@ -1,0 +1,211 @@
+{
+  "attempt": "20260914T151042Z_eb91fcd4",
+  "child_pid": 3387081,
+  "command": [
+    "${REPO_ROOT}/memalpha-locomo-generalization/.venv/bin/python",
+    "${REPO_ROOT}/memalpha-locomo-generalization/run.py",
+    "build",
+    "--arm",
+    "memalpha"
+  ],
+  "cuda_mapping": [
+    {
+      "physical_index": 0,
+      "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+    }
+  ],
+  "exit_code": 0,
+  "finished_utc": "2026-09-14T15:29:19.409602+00:00",
+  "gpus": [
+    "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+  ],
+  "last_resource_check": {
+    "cards": [
+      {
+        "free_mib": 2667.0,
+        "index": 0,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:01:00.0",
+        "pids": [
+          3387430
+        ],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 1,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:21:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 2,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:41:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 3,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:61:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 4,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:81:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 5,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:A1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 6,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:C1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70"
+      },
+      {
+        "free_mib": 19165.0,
+        "index": 7,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:E1:00.0",
+        "pids": [
+          3395574
+        ],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b"
+      }
+    ],
+    "checked_utc": "2026-09-14T15:29:14.188979+00:00",
+    "host_available_bytes": 611642458112,
+    "node": "gpu-04"
+  },
+  "launcher_pid": 3386965,
+  "name": "full_memalpha_001",
+  "node": "gpu-04",
+  "operations_sha256": "793c7c6112be017737060cffb579e543a5cc978b0e9d8074296c218200e66a4f",
+  "operations_version": "1.1",
+  "owned_pids": [],
+  "physical_inventory": {
+    "cards": [
+      {
+        "free_mib": 32236.0,
+        "index": 0,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:01:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 1,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:21:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 2,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:41:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 3,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:61:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 4,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:81:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 5,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:A1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23"
+      },
+      {
+        "free_mib": 32236.0,
+        "index": 6,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:C1:00.0",
+        "pids": [],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70"
+      },
+      {
+        "free_mib": 23387.0,
+        "index": 7,
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "pci_bus_id": "00000000:E1:00.0",
+        "pids": [
+          3386154
+        ],
+        "reserved": false,
+        "total_mib": 32760.0,
+        "uuid": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b"
+      }
+    ],
+    "checked_utc": "2026-09-14T15:10:43.260501+00:00",
+    "host_available_bytes": 668266053632,
+    "node": "gpu-04"
+  },
+  "started_utc": "2026-09-14T15:10:43.078922+00:00",
+  "state": "complete",
+  "stop_reason": null
+}

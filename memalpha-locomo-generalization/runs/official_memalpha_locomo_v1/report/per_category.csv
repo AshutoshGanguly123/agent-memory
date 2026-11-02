@@ -1,0 +1,11 @@
+arm,category,count,completed,score
+memalpha,multi_hop,282,282,0.16914209826307605
+memalpha,temporal,321,321,0.18113080394447234
+memalpha,open_domain,96,96,0.10454394831091579
+memalpha,single_hop,841,841,0.1992650298547139
+memalpha,adversarial,446,446,0.8139013452914798
+qwen3_base,multi_hop,282,282,0.20546132340070167
+qwen3_base,temporal,321,321,0.2318846599959546
+qwen3_base,open_domain,96,96,0.11474054620524567
+qwen3_base,single_hop,841,841,0.20116047092855618
+qwen3_base,adversarial,446,446,0.8026905829596412

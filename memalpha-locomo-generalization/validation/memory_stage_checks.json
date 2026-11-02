@@ -1,0 +1,25 @@
+{
+  "verified_utc": "2026-09-14T15:30:32.497149+00:00",
+  "scope": "Writer artifacts only; QA deliberately excluded pending completion",
+  "passed": true,
+  "source_hash": "637261e551358254ba40ea87306bd00576fb1e9d4a1b6981fcae23e1bf2a33ad",
+  "config_hash": "06a0e9522f45ab8d1bfe1f73421b723280904bceffb3d5d0ced169fe38829dc9",
+  "verifier_sha256": "f14e15ab84c7fa156446c00a4cdbab782f1dc003faef7735d85cba7347aa4aef",
+  "result": {
+    "issues": [],
+    "counts": {
+      "chunk_receipts": 276,
+      "frozen_memories": 20,
+      "archived_attempt_files": 0
+    },
+    "expected": {
+      "frozen_memories": 20,
+      "chunk_receipts": 276,
+      "latest_answers": 0
+    },
+    "completed_categories": {
+      "memalpha": {},
+      "qwen3_base": {}
+    }
+  }
+}

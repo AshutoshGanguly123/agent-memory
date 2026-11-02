@@ -1,0 +1,68 @@
+{'status': 'waiting_for_pipeline', 'utc': '2026-09-14T15:49:34.482785+00:00'}
+{'status': 'verifying', 'utc': '2026-09-14T16:29:04.696528+00:00', 'command': ['/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/.venv/bin/python', '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/verification/verify_run.py', '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization', '--output', '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/verification/integrity.json']}
+{
+  "checked_utc": "2026-09-14T16:29:16.840857+00:00",
+  "completed_categories": {
+    "memalpha": {
+      "1": 282,
+      "2": 321,
+      "3": 96,
+      "4": 841,
+      "5": 446
+    },
+    "qwen3_base": {
+      "1": 282,
+      "2": 321,
+      "3": 96,
+      "4": 841,
+      "5": 446
+    }
+  },
+  "config_hash": "06a0e9522f45ab8d1bfe1f73421b723280904bceffb3d5d0ced169fe38829dc9",
+  "counts": {
+    "archived_attempt_files": 0,
+    "chunk_receipts": 276,
+    "frozen_memories": 20,
+    "latest_answers": 3972
+  },
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "expected": {
+    "chunk_receipts": 276,
+    "frozen_memories": 20,
+    "latest_answers": 3972
+  },
+  "expected_categories_per_arm": {
+    "1": 282,
+    "2": 321,
+    "3": 96,
+    "4": 841,
+    "5": 446
+  },
+  "expected_clean_adversarial_per_arm": 442,
+  "expected_nonadversarial_per_arm": 1540,
+  "experiment": "/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization",
+  "first_issues": [],
+  "issue_count": 0,
+  "passed": true,
+  "prediction_scoring_performed": false,
+  "report": {
+    "artifact_sha256": {
+      "metrics.json": "cdb39dd0ac21a431f8f499b2dcb4fc491c8c35d0b3951ccc958e5812fba84f08",
+      "per_question.json": "5bd7210313d28e0a63771bc14aab6b1cdaefc43e520576ef3517293fa564c34d"
+    },
+    "present": true
+  },
+  "run": "/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1",
+  "shared_question_option_manifest_sha256": "e28ba8ba18410e82f2601036cc3dad5da4b1c79dc0e722f7f5a636571a703122",
+  "source_hash": "637261e551358254ba40ea87306bd00576fb1e9d4a1b6981fcae23e1bf2a33ad",
+  "verifier_sha256": "f14e15ab84c7fa156446c00a4cdbab782f1dc003faef7735d85cba7347aa4aef"
+}
+{'status': 'packaging', 'utc': '2026-09-14T16:29:16.866040+00:00', 'command': ['/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/.venv/bin/python', '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/verification/package_run.py', '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization']}
+{
+  "packaged": true,
+  "manifest": "/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/run_manifest.json",
+  "artifact_count": 4737,
+  "indexed_bytes": 208932241,
+  "artifact_index_sha256": "e00df4b024e49bfcfb103bd9d40dca689b205451c4bd0b68eec6136630f40a93"
+}
+{'status': 'complete', 'utc': '2026-09-14T16:29:33.864623+00:00', 'report': '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/report/report.md', 'integrity': '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/verification/integrity.json', 'manifest': '/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/runs/official_memalpha_locomo_v1/run_manifest.json'}

@@ -1,0 +1,7 @@
+{
+  "time_utc": "2026-09-10T12:47:24.806009+00:00",
+  "canonical": "${REPO_ROOT}/a-mem-locomo",
+  "physical": "${REPO_ROOT}/a-mem-locomo",
+  "preserved_failed_setup": "${REPO_ROOT}/a-mem-locomo_lustre_setup_20260910",
+  "reason": "Repeated /l EFAULT and blocked cl_sync_io_wait; HPC home fsync/read probe succeeded."
+}

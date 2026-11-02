@@ -1,0 +1,22 @@
+{
+  "dispatch": {
+    "attempt": "20260914T152935Z_889e57d8",
+    "child_pid": 3397314,
+    "gpus": [
+      "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd",
+      "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567",
+      "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9",
+      "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+    ],
+    "node": "gpu-04",
+    "previous_node_failures": [],
+    "state": "running",
+    "tmux_session": "memalpha_full_reader_001"
+  },
+  "operation": "full_reader_001",
+  "report": "${REPO_ROOT}/memalpha-locomo-generalization/runs/official_memalpha_locomo_v1/report/report.md",
+  "stage": "reader",
+  "started_utc": "2026-09-14T15:10:39.805728+00:00",
+  "state": "complete",
+  "updated_utc": "2026-09-14T16:28:56.803903+00:00"
+}

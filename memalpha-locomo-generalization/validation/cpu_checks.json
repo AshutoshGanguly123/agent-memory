@@ -1,0 +1,8 @@
+{
+  "test_command": "MEMALPHA_READER_TOKENIZER_JSON=models/reader/tokenizer.json NLTK_DATA=.venv/nltk_data TIKTOKEN_CACHE_DIR=models/tiktoken_cache .venv/bin/python -m pytest tests -q",
+  "host": "MBZUAI HPC login",
+  "result": "106 passed in 14.70s",
+  "verified_utc": "2026-09-14T15:17:21+00:00",
+  "packaging_supplement": "10 tests passed in 0.15s on the HPC after adding the final package manifest utility",
+  "scope": "CPU protocol, bridge, runner, report, resource ownership, durable pipeline and independent artifact verification; GPU smoke separate"
+}

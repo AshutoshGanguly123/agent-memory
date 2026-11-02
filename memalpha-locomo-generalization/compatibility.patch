@@ -1,0 +1,77 @@
+diff --git a/memory.py b/memory.py
+index ff808ba..7840c4d 100644
+--- a/memory.py
++++ b/memory.py
+@@ -4,6 +4,7 @@ import json
+ import os
+ import openai
+ import uuid
++import hashlib
+ import math
+ import re
+ import numpy as np
+@@ -23,7 +24,11 @@ class Memory:
+     MODEL = "gpt-4.1-mini"  # Same model as agent.py
+     TOPK = 20
+ 
+-    def __init__(self, including_core: bool = False, disabled_memory_types: List[str] = None) -> None:
++    def __init__(self, including_core: bool = False, disabled_memory_types: List[str] = None,
++                 embedding_enabled: bool = True, id_seed: str = None) -> None:
++        # Optional inference-only controls; the original defaults are preserved.
++        self.embedding_enabled = embedding_enabled
++        self.id_seed = id_seed
+         disabled_memory_types = disabled_memory_types or []
+         normalized_disabled = {mem_type.lower() for mem_type in disabled_memory_types}
+         invalid = normalized_disabled - {"core", "semantic", "episodic"}
+@@ -106,7 +111,23 @@ class Memory:
+ 
+     def _generate_memory_id(self) -> str:
+         """Generate a unique ID for a memory item."""
+-        return str(uuid.uuid4())[:4]  # Using first 4 characters of UUID
++        existing = {key for item in self.semantic + self.episodic for key in item}
++        if len(existing) >= 65536:
++            raise ValueError("Four-character memory ID space exhausted")
++        if self.id_seed is not None:
++            # IDs are opaque. Deriving the initial candidate from the canonical
++            # pre-operation state makes replay independent of process RNG state.
++            state = json.dumps([self.core, self.semantic, self.episodic],
++                               sort_keys=True, ensure_ascii=False)
++            start = int(hashlib.sha256((str(self.id_seed) + state).encode()).hexdigest()[:4], 16)
++            for offset in range(65536):
++                candidate = f"{(start + offset) % 65536:04x}"
++                if candidate not in existing:
++                    return candidate
++        while True:
++            candidate = str(uuid.uuid4())[:4]
++            if candidate not in existing:
++                return candidate
+ 
+     def _content_exists(self, memory_type: str, content: str) -> bool:
+         """Check if content already exists in the specified memory type."""
+@@ -122,6 +143,8 @@ class Memory:
+ 
+     def _get_embedding(self, text: str) -> np.ndarray:
+         """Generate embedding for text using OpenAI's embedding model."""
++        if not self.embedding_enabled:
++            return np.zeros(1536)
+         try:
+             load_dotenv()
+             client = openai.OpenAI()
+@@ -358,6 +381,8 @@ CONSOLIDATION OBJECTIVES:
+     # --------------------------------------------------
+     def new_memory_insert(self, memory_type: str, content: str):
+         """Insert a new memory with a unique ID. Skips insertion if content already exists."""
++        if not isinstance(content, str):
++            raise ValueError("Memory content must be a string")
+         if memory_type in ['semantic', 'episodic']:
+             self._ensure_memory_type_enabled(memory_type)
+ 
+@@ -397,6 +422,8 @@ CONSOLIDATION OBJECTIVES:
+ 
+     def memory_update(self, memory_type: str, new_content: str, memory_id: str=None):
+         """Update a memory by its ID."""
++        if not isinstance(new_content, str):
++            raise ValueError("Memory content must be a string")
+         if memory_type in ['semantic', 'episodic']:
+             self._ensure_memory_type_enabled(memory_type)
+ 

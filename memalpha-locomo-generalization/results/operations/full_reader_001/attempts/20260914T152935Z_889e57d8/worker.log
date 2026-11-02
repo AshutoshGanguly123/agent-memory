@@ -1,0 +1,453 @@
+rapidfuzz not available. Install with: pip install rapidfuzz
+INFO 09-14 19:29:41 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-14 19:29:48 [config.py:717] This model supports multiple tasks: {'reward', 'generate', 'classify', 'score', 'embed'}. Defaulting to 'generate'.
+INFO 09-14 19:29:48 [config.py:1770] Defaulting to use mp for distributed inference
+INFO 09-14 19:29:48 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-14 19:29:52 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-14 19:29:55 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader', speculative_config=None, tokenizer='/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=42, served_model_name=/home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
+INFO 09-14 19:29:55 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0, 1, 2, 3], buffer_handle=(4, 10485760, 10, 'psm_60a0efbe'), local_subscribe_addr='ipc:///tmp/be8f8652-09f6-467d-aa54-55a34ef80b4b', remote_subscribe_addr=None, remote_addr_ipv6=False)
+INFO 09-14 19:29:58 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-14 19:29:58 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-14 19:29:58 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-14 19:29:58 [__init__.py:239] Automatically detected platform cuda.
+WARNING 09-14 19:30:00 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f72f5eea810>
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:00 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_0ad6519e'), local_subscribe_addr='ipc:///tmp/894def5f-123d-432d-ad09-9b972786babe', remote_subscribe_addr=None, remote_addr_ipv6=False)
+WARNING 09-14 19:30:00 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7ff80952bf80>
+WARNING 09-14 19:30:00 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f2730226240>
+WARNING 09-14 19:30:00 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f81066d37a0>
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:00 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_46467ea2'), local_subscribe_addr='ipc:///tmp/48901276-3ae1-4208-a723-eb7ff8f5f84b', remote_subscribe_addr=None, remote_addr_ipv6=False)
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:00 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_8fe075f2'), local_subscribe_addr='ipc:///tmp/66898ab2-6f21-436d-b664-8d85f502604a', remote_subscribe_addr=None, remote_addr_ipv6=False)
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:00 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_1154f3f2'), local_subscribe_addr='ipc:///tmp/4cdffed4-4c8a-44d7-b4c4-4347546451c6', remote_subscribe_addr=None, remote_addr_ipv6=False)
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:01 [utils.py:1055] Found nccl from library libnccl.so.2
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:01 [utils.py:1055] Found nccl from library libnccl.so.2
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:01 [utils.py:1055] Found nccl from library libnccl.so.2
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:01 [utils.py:1055] Found nccl from library libnccl.so.2
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:01 [pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:01 [pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:01 [pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:01 [pynccl.py:69] vLLM is using nccl==2.21.5
+gpu-04:3397457:3397457 [0] NCCL INFO Bootstrap : Using enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397457:3397457 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+gpu-04:3397457:3397457 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+gpu-04:3397457:3397457 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+gpu-04:3397457:3397457 [0] NCCL INFO cudaDriverVersion 12080
+NCCL version 2.21.5+cuda12.4
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m WARNING 09-14 19:30:02 [custom_all_reduce.py:136] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m WARNING 09-14 19:30:02 [custom_all_reduce.py:136] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m WARNING 09-14 19:30:02 [custom_all_reduce.py:136] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m WARNING 09-14 19:30:02 [custom_all_reduce.py:136] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:02 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[1, 2, 3], buffer_handle=(3, 4194304, 6, 'psm_5660cdb6'), local_subscribe_addr='ipc:///tmp/28f08dfb-5247-4c4b-81d9-a6467acb84af', remote_subscribe_addr=None, remote_addr_ipv6=False)
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:02 [parallel_state.py:1004] rank 2 in world size 4 is assigned as DP rank 0, PP rank 0, TP rank 2
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:02 [parallel_state.py:1004] rank 0 in world size 4 is assigned as DP rank 0, PP rank 0, TP rank 0
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:02 [parallel_state.py:1004] rank 3 in world size 4 is assigned as DP rank 0, PP rank 0, TP rank 3
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:02 [parallel_state.py:1004] rank 1 in world size 4 is assigned as DP rank 0, PP rank 0, TP rank 1
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:02 [cuda.py:221] Using Flash Attention backend on V1 engine.
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:02 [cuda.py:221] Using Flash Attention backend on V1 engine.
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:02 [cuda.py:221] Using Flash Attention backend on V1 engine.
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m WARNING 09-14 19:30:02 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m WARNING 09-14 19:30:02 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:02 [cuda.py:221] Using Flash Attention backend on V1 engine.
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m WARNING 09-14 19:30:02 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m WARNING 09-14 19:30:02 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:02 [gpu_model_runner.py:1329] Starting to load model /home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader...
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:02 [gpu_model_runner.py:1329] Starting to load model /home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader...
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:02 [gpu_model_runner.py:1329] Starting to load model /home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader...
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:02 [gpu_model_runner.py:1329] Starting to load model /home/ashutosh.ganguly/agent_memory/MemAlpha_LoCoMo_generalization/models/reader...
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:00<00:02,  6.51it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:00<00:02,  6.67it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:00<00:02,  6.75it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:00<00:01,  6.74it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:00<00:01,  6.72it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:00<00:01,  6.70it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:01<00:01,  6.65it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:01<00:01,  6.68it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:01<00:01,  6.63it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  59% Completed | 10/17 [00:01<00:01,  6.42it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  65% Completed | 11/17 [00:01<00:00,  6.34it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  71% Completed | 12/17 [00:01<00:00,  6.79it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  76% Completed | 13/17 [00:01<00:00,  6.68it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  82% Completed | 14/17 [00:02<00:00,  6.63it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  88% Completed | 15/17 [00:02<00:00,  6.58it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards:  94% Completed | 16/17 [00:02<00:00,  7.29it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards: 100% Completed | 17/17 [00:02<00:00,  7.06it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m Loading safetensors checkpoint shards: 100% Completed | 17/17 [00:02<00:00,  6.75it/s]
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m 
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:04 [loader.py:458] Loading weights took 2.53 seconds
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:04 [loader.py:458] Loading weights took 2.63 seconds
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:04 [loader.py:458] Loading weights took 2.65 seconds
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:05 [loader.py:458] Loading weights took 2.75 seconds
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:05 [gpu_model_runner.py:1347] Model loading took 15.3920 GiB and 2.708687 seconds
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:05 [gpu_model_runner.py:1347] Model loading took 15.3920 GiB and 2.806471 seconds
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:05 [gpu_model_runner.py:1347] Model loading took 15.3920 GiB and 2.827581 seconds
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:05 [gpu_model_runner.py:1347] Model loading took 15.3920 GiB and 2.924292 seconds
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:18 [backends.py:420] Using cache directory: /home/ashutosh.ganguly/.cache/vllm/torch_compile_cache/3e712f75a2/rank_0_0 for vLLM's torch.compile
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:18 [backends.py:420] Using cache directory: /home/ashutosh.ganguly/.cache/vllm/torch_compile_cache/3e712f75a2/rank_1_0 for vLLM's torch.compile
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:18 [backends.py:420] Using cache directory: /home/ashutosh.ganguly/.cache/vllm/torch_compile_cache/3e712f75a2/rank_2_0 for vLLM's torch.compile
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:18 [backends.py:430] Dynamo bytecode transform time: 13.45 s
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:18 [backends.py:430] Dynamo bytecode transform time: 13.45 s
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:18 [backends.py:430] Dynamo bytecode transform time: 13.45 s
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:19 [backends.py:420] Using cache directory: /home/ashutosh.ganguly/.cache/vllm/torch_compile_cache/3e712f75a2/rank_3_0 for vLLM's torch.compile
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:19 [backends.py:430] Dynamo bytecode transform time: 13.57 s
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:28 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 9.308 s
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:28 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 9.371 s
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:29 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 9.484 s
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:29 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 9.566 s
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:30:31 [monitor.py:33] torch.compile takes 13.45 s in total
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:30:31 [monitor.py:33] torch.compile takes 13.45 s in total
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:30:31 [monitor.py:33] torch.compile takes 13.45 s in total
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:30:31 [monitor.py:33] torch.compile takes 13.57 s in total
+INFO 09-14 19:30:34 [kv_cache_utils.py:634] GPU KV cache size: 181,232 tokens
+INFO 09-14 19:30:34 [kv_cache_utils.py:637] Maximum concurrency for 32,768 tokens per request: 5.53x
+INFO 09-14 19:30:34 [kv_cache_utils.py:634] GPU KV cache size: 181,232 tokens
+INFO 09-14 19:30:34 [kv_cache_utils.py:637] Maximum concurrency for 32,768 tokens per request: 5.53x
+INFO 09-14 19:30:34 [kv_cache_utils.py:634] GPU KV cache size: 181,232 tokens
+INFO 09-14 19:30:34 [kv_cache_utils.py:637] Maximum concurrency for 32,768 tokens per request: 5.53x
+INFO 09-14 19:30:34 [kv_cache_utils.py:634] GPU KV cache size: 181,232 tokens
+INFO 09-14 19:30:34 [kv_cache_utils.py:637] Maximum concurrency for 32,768 tokens per request: 5.53x
+[1;36m(VllmWorker rank=2 pid=3397459)[0;0m INFO 09-14 19:31:07 [gpu_model_runner.py:1686] Graph capturing finished in 33 secs, took 2.20 GiB
+[1;36m(VllmWorker rank=1 pid=3397458)[0;0m INFO 09-14 19:31:07 [gpu_model_runner.py:1686] Graph capturing finished in 33 secs, took 2.20 GiB
+[1;36m(VllmWorker rank=0 pid=3397457)[0;0m INFO 09-14 19:31:07 [gpu_model_runner.py:1686] Graph capturing finished in 33 secs, took 2.20 GiB
+[1;36m(VllmWorker rank=3 pid=3397460)[0;0m INFO 09-14 19:31:07 [gpu_model_runner.py:1686] Graph capturing finished in 33 secs, took 2.20 GiB
+INFO 09-14 19:31:07 [core.py:159] init engine (profile, create kv cache, warmup model) took 61.62 seconds
+INFO 09-14 19:31:07 [core_client.py:439] Core engine process 0 ready.
+{'status': 'running', 'utc': '2026-09-14T15:31:25.586084+00:00', 'elapsed_seconds': 108.78256696200697, 'completed': 32, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:31:42.808616+00:00', 'elapsed_seconds': 126.00509918102762, 'completed': 64, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:31:58.956573+00:00', 'elapsed_seconds': 142.15305685298517, 'completed': 96, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:32:15.933416+00:00', 'elapsed_seconds': 159.129899010004, 'completed': 128, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:32:31.928251+00:00', 'elapsed_seconds': 175.12473397800932, 'completed': 160, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:32:44.095184+00:00', 'elapsed_seconds': 187.29166705801617, 'completed': 192, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:32:58.939313+00:00', 'elapsed_seconds': 202.13579658902017, 'completed': 224, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:33:16.175432+00:00', 'elapsed_seconds': 219.37191429402446, 'completed': 256, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:33:33.174389+00:00', 'elapsed_seconds': 236.37087158602662, 'completed': 288, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:33:56.080225+00:00', 'elapsed_seconds': 259.27670748799574, 'completed': 320, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:34:28.459460+00:00', 'elapsed_seconds': 291.6559431719943, 'completed': 352, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:35:05.461591+00:00', 'elapsed_seconds': 328.6580735470052, 'completed': 384, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:35:40.968456+00:00', 'elapsed_seconds': 364.1649383730255, 'completed': 416, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:36:14.874611+00:00', 'elapsed_seconds': 398.0710941689904, 'completed': 448, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:36:49.495399+00:00', 'elapsed_seconds': 432.69188108399976, 'completed': 480, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:37:12.121363+00:00', 'elapsed_seconds': 455.3178460270283, 'completed': 512, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:37:24.899290+00:00', 'elapsed_seconds': 468.09577240399085, 'completed': 544, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:37:37.425342+00:00', 'elapsed_seconds': 480.6218241510214, 'completed': 576, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:37:49.480083+00:00', 'elapsed_seconds': 492.6765697650262, 'completed': 608, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:38:01.589160+00:00', 'elapsed_seconds': 504.78564300300786, 'completed': 640, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:38:15.165785+00:00', 'elapsed_seconds': 518.3622671670164, 'completed': 672, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:38:28.307781+00:00', 'elapsed_seconds': 531.5042637020233, 'completed': 704, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:38:38.989949+00:00', 'elapsed_seconds': 542.1864310730016, 'completed': 736, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:39:14.511712+00:00', 'elapsed_seconds': 577.7081945799873, 'completed': 768, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:40:33.682902+00:00', 'elapsed_seconds': 656.8793873360264, 'completed': 800, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:41:50.153526+00:00', 'elapsed_seconds': 733.3500128349988, 'completed': 832, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:43:07.660939+00:00', 'elapsed_seconds': 810.8574218630092, 'completed': 864, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:44:24.189487+00:00', 'elapsed_seconds': 887.3859702260233, 'completed': 896, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:45:41.926285+00:00', 'elapsed_seconds': 965.122770505026, 'completed': 928, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:46:57.264436+00:00', 'elapsed_seconds': 1040.4609183599823, 'completed': 960, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:48:12.490884+00:00', 'elapsed_seconds': 1115.6873664300074, 'completed': 992, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:48:58.988052+00:00', 'elapsed_seconds': 1162.1845348480274, 'completed': 1024, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:49:33.495792+00:00', 'elapsed_seconds': 1196.6922754260013, 'completed': 1056, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:50:08.796507+00:00', 'elapsed_seconds': 1231.992989537015, 'completed': 1088, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:50:45.858625+00:00', 'elapsed_seconds': 1269.055108725035, 'completed': 1120, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:51:19.931918+00:00', 'elapsed_seconds': 1303.128399873036, 'completed': 1152, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:51:40.114943+00:00', 'elapsed_seconds': 1323.3114250600338, 'completed': 1184, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:51:55.562047+00:00', 'elapsed_seconds': 1338.7585290580173, 'completed': 1216, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:52:11.192759+00:00', 'elapsed_seconds': 1354.389242545003, 'completed': 1248, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:52:26.226247+00:00', 'elapsed_seconds': 1369.422728799982, 'completed': 1280, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:52:41.214479+00:00', 'elapsed_seconds': 1384.410961880989, 'completed': 1312, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:52:53.467351+00:00', 'elapsed_seconds': 1396.6638338440098, 'completed': 1344, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:53:17.533971+00:00', 'elapsed_seconds': 1420.730453923985, 'completed': 1376, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:53:46.549809+00:00', 'elapsed_seconds': 1449.746291598014, 'completed': 1408, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:54:13.304520+00:00', 'elapsed_seconds': 1476.5010026480304, 'completed': 1440, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:54:33.363239+00:00', 'elapsed_seconds': 1496.5597213230212, 'completed': 1472, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:55:01.129085+00:00', 'elapsed_seconds': 1524.325567708991, 'completed': 1504, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:55:27.342398+00:00', 'elapsed_seconds': 1550.5388822620152, 'completed': 1536, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:55:52.638800+00:00', 'elapsed_seconds': 1575.8352922350168, 'completed': 1568, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:56:09.827437+00:00', 'elapsed_seconds': 1593.0239289770252, 'completed': 1600, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:56:23.644265+00:00', 'elapsed_seconds': 1606.840747128008, 'completed': 1632, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:56:35.099995+00:00', 'elapsed_seconds': 1618.2964768960373, 'completed': 1664, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:56:47.565782+00:00', 'elapsed_seconds': 1630.7622645000229, 'completed': 1696, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:56:59.308378+00:00', 'elapsed_seconds': 1642.5048602690222, 'completed': 1728, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:57:09.263914+00:00', 'elapsed_seconds': 1652.4603965069982, 'completed': 1760, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:57:30.553319+00:00', 'elapsed_seconds': 1673.7498012490105, 'completed': 1792, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:58:13.329111+00:00', 'elapsed_seconds': 1716.5255932239816, 'completed': 1824, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:58:57.614312+00:00', 'elapsed_seconds': 1760.8107942939969, 'completed': 1856, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T15:59:40.315150+00:00', 'elapsed_seconds': 1803.511632226, 'completed': 1888, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:00:26.301855+00:00', 'elapsed_seconds': 1849.4983368800022, 'completed': 1920, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:01:08.299115+00:00', 'elapsed_seconds': 1891.4955977349891, 'completed': 1952, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:01:50.104537+00:00', 'elapsed_seconds': 1933.3010195610113, 'completed': 1984, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:02:15.888639+00:00', 'elapsed_seconds': 1959.085120912001, 'completed': 2016, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:02:40.637333+00:00', 'elapsed_seconds': 1983.8338151469943, 'completed': 2048, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:03:03.162318+00:00', 'elapsed_seconds': 2006.3588006719947, 'completed': 2080, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:03:26.585003+00:00', 'elapsed_seconds': 2029.7814867210109, 'completed': 2112, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:03:50.241735+00:00', 'elapsed_seconds': 2053.438218370022, 'completed': 2144, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:04:12.374924+00:00', 'elapsed_seconds': 2075.5714064189815, 'completed': 2176, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:04:31.601186+00:00', 'elapsed_seconds': 2094.797668286017, 'completed': 2208, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:04:50.049829+00:00', 'elapsed_seconds': 2113.2463108929805, 'completed': 2240, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:05:08.273862+00:00', 'elapsed_seconds': 2131.4703437960125, 'completed': 2272, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:05:17.386985+00:00', 'elapsed_seconds': 2140.5834672430065, 'completed': 2304, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:05:27.912961+00:00', 'elapsed_seconds': 2151.1094440860325, 'completed': 2336, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:05:38.145013+00:00', 'elapsed_seconds': 2161.3414951640298, 'completed': 2368, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:05:48.119060+00:00', 'elapsed_seconds': 2171.3155468819896, 'completed': 2400, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:05:58.554940+00:00', 'elapsed_seconds': 2181.751422839996, 'completed': 2432, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:06:07.770456+00:00', 'elapsed_seconds': 2190.966937970021, 'completed': 2464, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:06:27.919548+00:00', 'elapsed_seconds': 2211.1160306900274, 'completed': 2496, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:07:01.280991+00:00', 'elapsed_seconds': 2244.477473807987, 'completed': 2528, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:07:33.955613+00:00', 'elapsed_seconds': 2277.1520962520153, 'completed': 2560, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:08:05.568307+00:00', 'elapsed_seconds': 2308.764789870009, 'completed': 2592, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:08:38.321235+00:00', 'elapsed_seconds': 2341.5177171209943, 'completed': 2624, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:09:11.179382+00:00', 'elapsed_seconds': 2374.3758644019836, 'completed': 2656, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:09:43.754665+00:00', 'elapsed_seconds': 2406.9511473840103, 'completed': 2688, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:10:15.453636+00:00', 'elapsed_seconds': 2438.6501199820195, 'completed': 2720, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:10:48.472276+00:00', 'elapsed_seconds': 2471.668758087035, 'completed': 2752, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:11:20.239988+00:00', 'elapsed_seconds': 2503.4364709309884, 'completed': 2784, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:11:51.468086+00:00', 'elapsed_seconds': 2534.6645684490213, 'completed': 2816, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:12:21.846199+00:00', 'elapsed_seconds': 2565.04268082598, 'completed': 2848, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:12:52.713550+00:00', 'elapsed_seconds': 2595.910032754997, 'completed': 2880, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:13:23.565147+00:00', 'elapsed_seconds': 2626.7616297689965, 'completed': 2912, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:13:53.312853+00:00', 'elapsed_seconds': 2656.5093349629897, 'completed': 2944, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:14:22.891315+00:00', 'elapsed_seconds': 2686.0877979859943, 'completed': 2976, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:14:56.295411+00:00', 'elapsed_seconds': 2719.4918928730185, 'completed': 3008, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:15:28.806120+00:00', 'elapsed_seconds': 2752.0026027860004, 'completed': 3040, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:16:01.618375+00:00', 'elapsed_seconds': 2784.814857600024, 'completed': 3072, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:16:33.338540+00:00', 'elapsed_seconds': 2816.535023046017, 'completed': 3104, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:17:04.599536+00:00', 'elapsed_seconds': 2847.796019181027, 'completed': 3136, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:17:33.426981+00:00', 'elapsed_seconds': 2876.6234632420237, 'completed': 3168, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:17:59.662869+00:00', 'elapsed_seconds': 2902.8593513779924, 'completed': 3200, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:18:27.073878+00:00', 'elapsed_seconds': 2930.2703605290153, 'completed': 3232, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:18:53.097641+00:00', 'elapsed_seconds': 2956.2941237339983, 'completed': 3264, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:19:19.406570+00:00', 'elapsed_seconds': 2982.6030518949847, 'completed': 3296, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:19:42.689795+00:00', 'elapsed_seconds': 3005.886277022015, 'completed': 3328, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:20:05.273221+00:00', 'elapsed_seconds': 3028.469703898998, 'completed': 3360, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:20:26.451220+00:00', 'elapsed_seconds': 3049.647701729031, 'completed': 3392, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:20:48.437032+00:00', 'elapsed_seconds': 3071.633514607034, 'completed': 3424, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:21:05.585232+00:00', 'elapsed_seconds': 3088.7817143449793, 'completed': 3456, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:21:27.569525+00:00', 'elapsed_seconds': 3110.7660077470355, 'completed': 3488, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:21:51.005159+00:00', 'elapsed_seconds': 3134.201641498017, 'completed': 3520, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:22:11.579079+00:00', 'elapsed_seconds': 3154.7755609540036, 'completed': 3552, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:22:29.909389+00:00', 'elapsed_seconds': 3173.1058715240215, 'completed': 3584, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:22:54.172711+00:00', 'elapsed_seconds': 3197.3691932610236, 'completed': 3616, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:23:17.714363+00:00', 'elapsed_seconds': 3220.9108462570002, 'completed': 3648, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:23:40.286284+00:00', 'elapsed_seconds': 3243.48276677198, 'completed': 3680, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:24:03.377904+00:00', 'elapsed_seconds': 3266.5743859200156, 'completed': 3712, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:24:25.783646+00:00', 'elapsed_seconds': 3288.9801289350144, 'completed': 3744, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:24:49.229492+00:00', 'elapsed_seconds': 3312.4259747790056, 'completed': 3776, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:25:22.706015+00:00', 'elapsed_seconds': 3345.9024973079795, 'completed': 3808, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:25:57.643903+00:00', 'elapsed_seconds': 3380.8403854960343, 'completed': 3840, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:26:31.316579+00:00', 'elapsed_seconds': 3414.513060950034, 'completed': 3872, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:27:05.327106+00:00', 'elapsed_seconds': 3448.5235880640103, 'completed': 3904, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:27:38.899643+00:00', 'elapsed_seconds': 3482.096125234035, 'completed': 3936, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:28:11.607927+00:00', 'elapsed_seconds': 3514.8044094929937, 'completed': 3968, 'total': 3972}
+{'status': 'running', 'utc': '2026-09-14T16:28:15.989180+00:00', 'elapsed_seconds': 3519.185661958996, 'completed': 3972, 'total': 3972}
+gpu-04:3397457:3397457 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+gpu-04:3397457:3397457 [0] NCCL INFO NET/Socket : Using [0]enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397457:3397457 [0] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397457:3397457 [0] NCCL INFO Using network Socket
+gpu-04:3397457:3397457 [0] NCCL INFO ncclCommInitRank comm 0x226a8ec0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1000 commId 0x3b6c147bfc626201 - Init START
+gpu-04:3397457:3397457 [0] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+gpu-04:3397457:3397457 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,ffffffff
+gpu-04:3397457:3397457 [0] NCCL INFO NVLS multicast support is not available on dev 0
+gpu-04:3397457:3397457 [0] NCCL INFO comm 0x226a8ec0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 00/04 :    0   1   2   3
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 01/04 :    0   1   2   3
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 02/04 :    0   1   2   3
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 03/04 :    0   1   2   3
+gpu-04:3397457:3397457 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1
+gpu-04:3397457:3397457 [0] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397457:3397457 [0] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 02 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3397457 [0] NCCL INFO Channel 03 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3397457 [0] NCCL INFO Connected all rings
+gpu-04:3397457:3397457 [0] NCCL INFO Connected all trees
+gpu-04:3397457:3397457 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397457:3397457 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397457:3397457 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+gpu-04:3397457:3397457 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+gpu-04:3397457:3397457 [0] NCCL INFO ncclCommInitRank comm 0x226a8ec0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1000 commId 0x3b6c147bfc626201 - Init COMPLETE
+gpu-04:3397457:3397457 [0] NCCL INFO Comm config Blocking set to 1
+gpu-04:3397457:3398113 [0] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397457:3398113 [0] NCCL INFO Using network Socket
+gpu-04:3397457:3398113 [0] NCCL INFO ncclCommInitRank comm 0x46f53430 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1000 commId 0xb8a9e0e862b9aa57 - Init START
+gpu-04:3397457:3398113 [0] NCCL INFO Setting affinity for GPU 0 to ffffffff,ffffffff
+gpu-04:3397457:3398113 [0] NCCL INFO NVLS multicast support is not available on dev 0
+gpu-04:3397457:3398113 [0] NCCL INFO comm 0x46f53430 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 00/04 :    0   1   2   3
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 01/04 :    0   1   2   3
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 02/04 :    0   1   2   3
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 03/04 :    0   1   2   3
+gpu-04:3397457:3398113 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1
+gpu-04:3397457:3398113 [0] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 02 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3398113 [0] NCCL INFO Channel 03 : 0[0] -> 1[1] via SHM/direct/direct
+gpu-04:3397457:3398113 [0] NCCL INFO Connected all rings
+gpu-04:3397457:3398113 [0] NCCL INFO Connected all trees
+gpu-04:3397457:3398113 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397457:3398113 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397457:3398113 [0] NCCL INFO ncclCommInitRank comm 0x46f53430 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1000 commId 0xb8a9e0e862b9aa57 - Init COMPLETE
+gpu-04:3397457:3397457 [0] NCCL INFO comm 0x46f53430 rank 0 nranks 4 cudaDev 0 busId 1000 - Destroy COMPLETE
+gpu-04:3397458:3397458 [1] NCCL INFO cudaDriverVersion 12080
+gpu-04:3397458:3397458 [1] NCCL INFO Bootstrap : Using enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397458:3397458 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+gpu-04:3397458:3397458 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+gpu-04:3397458:3397458 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+gpu-04:3397458:3397458 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+gpu-04:3397458:3397458 [1] NCCL INFO NET/Socket : Using [0]enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397458:3397458 [1] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397458:3397458 [1] NCCL INFO Using network Socket
+gpu-04:3397458:3397458 [1] NCCL INFO ncclCommInitRank comm 0x3b919e10 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 21000 commId 0x3b6c147bfc626201 - Init START
+gpu-04:3397458:3397458 [1] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+gpu-04:3397458:3397458 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,ffffffff
+gpu-04:3397458:3397458 [1] NCCL INFO NVLS multicast support is not available on dev 1
+gpu-04:3397458:3397458 [1] NCCL INFO comm 0x3b919e10 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+gpu-04:3397458:3397458 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0
+gpu-04:3397458:3397458 [1] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397458:3397458 [1] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 02 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 03 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Connected all rings
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 02 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Channel 03 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3397458 [1] NCCL INFO Connected all trees
+gpu-04:3397458:3397458 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397458:3397458 [1] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397458:3397458 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+gpu-04:3397458:3397458 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+gpu-04:3397458:3397458 [1] NCCL INFO ncclCommInitRank comm 0x3b919e10 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 21000 commId 0x3b6c147bfc626201 - Init COMPLETE
+gpu-04:3397458:3397458 [1] NCCL INFO Comm config Blocking set to 1
+gpu-04:3397458:3398114 [1] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397458:3398114 [1] NCCL INFO Using network Socket
+gpu-04:3397458:3398114 [1] NCCL INFO ncclCommInitRank comm 0x60278c30 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 21000 commId 0xb8a9e0e862b9aa57 - Init START
+gpu-04:3397458:3398114 [1] NCCL INFO Setting affinity for GPU 1 to ffffffff,ffffffff
+gpu-04:3397458:3398114 [1] NCCL INFO NVLS multicast support is not available on dev 1
+gpu-04:3397458:3398114 [1] NCCL INFO comm 0x60278c30 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+gpu-04:3397458:3398114 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0
+gpu-04:3397458:3398114 [1] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 02 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 03 : 1[1] -> 2[2] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Connected all rings
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 02 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Channel 03 : 1[1] -> 0[0] via SHM/direct/direct
+gpu-04:3397458:3398114 [1] NCCL INFO Connected all trees
+gpu-04:3397458:3398114 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397458:3398114 [1] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397458:3398114 [1] NCCL INFO ncclCommInitRank comm 0x60278c30 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 21000 commId 0xb8a9e0e862b9aa57 - Init COMPLETE
+gpu-04:3397458:3397458 [1] NCCL INFO comm 0x60278c30 rank 1 nranks 4 cudaDev 1 busId 21000 - Destroy COMPLETE
+gpu-04:3397460:3397460 [3] NCCL INFO cudaDriverVersion 12080
+gpu-04:3397460:3397460 [3] NCCL INFO Bootstrap : Using enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397460:3397460 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+gpu-04:3397460:3397460 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+gpu-04:3397460:3397460 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+gpu-04:3397460:3397460 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+gpu-04:3397460:3397460 [3] NCCL INFO NET/Socket : Using [0]enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397460:3397460 [3] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397460:3397460 [3] NCCL INFO Using network Socket
+gpu-04:3397460:3397460 [3] NCCL INFO ncclCommInitRank comm 0x408c9810 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 61000 commId 0x3b6c147bfc626201 - Init START
+gpu-04:3397460:3397460 [3] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+gpu-04:3397460:3397460 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffffffff
+gpu-04:3397460:3397460 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gpu-04:3397460:3397460 [3] NCCL INFO comm 0x408c9810 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+gpu-04:3397460:3397460 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2
+gpu-04:3397460:3397460 [3] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397460:3397460 [3] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 02 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 03 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Connected all rings
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 02 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Channel 03 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3397460 [3] NCCL INFO Connected all trees
+gpu-04:3397460:3397460 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397460:3397460 [3] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397460:3397460 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+gpu-04:3397460:3397460 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+gpu-04:3397460:3397460 [3] NCCL INFO ncclCommInitRank comm 0x408c9810 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 61000 commId 0x3b6c147bfc626201 - Init COMPLETE
+gpu-04:3397460:3397460 [3] NCCL INFO Comm config Blocking set to 1
+gpu-04:3397460:3398116 [3] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397460:3398116 [3] NCCL INFO Using network Socket
+gpu-04:3397460:3398116 [3] NCCL INFO ncclCommInitRank comm 0x6521a650 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 61000 commId 0xb8a9e0e862b9aa57 - Init START
+gpu-04:3397460:3398116 [3] NCCL INFO Setting affinity for GPU 3 to ffffffff,ffffffff
+gpu-04:3397460:3398116 [3] NCCL INFO NVLS multicast support is not available on dev 3
+gpu-04:3397460:3398116 [3] NCCL INFO comm 0x6521a650 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+gpu-04:3397460:3398116 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2
+gpu-04:3397460:3398116 [3] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 02 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 03 : 3[3] -> 0[0] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Connected all rings
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 02 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Channel 03 : 3[3] -> 2[2] via SHM/direct/direct
+gpu-04:3397460:3398116 [3] NCCL INFO Connected all trees
+gpu-04:3397460:3398116 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397460:3398116 [3] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397460:3398116 [3] NCCL INFO ncclCommInitRank comm 0x6521a650 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 61000 commId 0xb8a9e0e862b9aa57 - Init COMPLETE
+gpu-04:3397460:3397460 [3] NCCL INFO comm 0x6521a650 rank 3 nranks 4 cudaDev 3 busId 61000 - Destroy COMPLETE
+gpu-04:3397459:3397459 [2] NCCL INFO cudaDriverVersion 12080
+gpu-04:3397459:3397459 [2] NCCL INFO Bootstrap : Using enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397459:3397459 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+gpu-04:3397459:3397459 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+gpu-04:3397459:3397459 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+gpu-04:3397459:3397459 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+gpu-04:3397459:3397459 [2] NCCL INFO NET/Socket : Using [0]enp194s0f0np0:10.127.78.119<0>
+gpu-04:3397459:3397459 [2] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397459:3397459 [2] NCCL INFO Using network Socket
+gpu-04:3397459:3397459 [2] NCCL INFO ncclCommInitRank comm 0x4b0c0830 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 41000 commId 0x3b6c147bfc626201 - Init START
+gpu-04:3397459:3397459 [2] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+gpu-04:3397459:3397459 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffffffff
+gpu-04:3397459:3397459 [2] NCCL INFO NVLS multicast support is not available on dev 2
+gpu-04:3397459:3397459 [2] NCCL INFO comm 0x4b0c0830 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+gpu-04:3397459:3397459 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1
+gpu-04:3397459:3397459 [2] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397459:3397459 [2] NCCL INFO NCCL_CUMEM_ENABLE set by environment to 0.
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 02 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 03 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Connected all rings
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 02 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Channel 03 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3397459 [2] NCCL INFO Connected all trees
+gpu-04:3397459:3397459 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397459:3397459 [2] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397459:3397459 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+gpu-04:3397459:3397459 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+gpu-04:3397459:3397459 [2] NCCL INFO ncclCommInitRank comm 0x4b0c0830 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 41000 commId 0x3b6c147bfc626201 - Init COMPLETE
+gpu-04:3397459:3397459 [2] NCCL INFO Comm config Blocking set to 1
+gpu-04:3397459:3398115 [2] NCCL INFO Using non-device net plugin version 0
+gpu-04:3397459:3398115 [2] NCCL INFO Using network Socket
+gpu-04:3397459:3398115 [2] NCCL INFO ncclCommInitRank comm 0x6f982b50 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 41000 commId 0xb8a9e0e862b9aa57 - Init START
+gpu-04:3397459:3398115 [2] NCCL INFO Setting affinity for GPU 2 to ffffffff,ffffffff
+gpu-04:3397459:3398115 [2] NCCL INFO NVLS multicast support is not available on dev 2
+gpu-04:3397459:3398115 [2] NCCL INFO comm 0x6f982b50 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+gpu-04:3397459:3398115 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1
+gpu-04:3397459:3398115 [2] NCCL INFO P2P Chunksize set to 131072
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 02 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 03 : 2[2] -> 3[3] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Connected all rings
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 02 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Channel 03 : 2[2] -> 1[1] via SHM/direct/direct
+gpu-04:3397459:3398115 [2] NCCL INFO Connected all trees
+gpu-04:3397459:3398115 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+gpu-04:3397459:3398115 [2] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+gpu-04:3397459:3398115 [2] NCCL INFO ncclCommInitRank comm 0x6f982b50 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 41000 commId 0xb8a9e0e862b9aa57 - Init COMPLETE
+gpu-04:3397459:3397459 [2] NCCL INFO comm 0x6f982b50 rank 2 nranks 4 cudaDev 2 busId 41000 - Destroy COMPLETE

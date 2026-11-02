@@ -1,0 +1,310 @@
+{
+  "recorded_utc": "2026-09-14T14:58:53.231563+00:00",
+  "operation": "smoke_reader",
+  "observed_state": {
+    "attempt": "20260914T145423Z_1fb4b2d5",
+    "child_pid": 3376438,
+    "command": [
+      ".venv/bin/python",
+      "run.py",
+      "answer",
+      "--synthetic"
+    ],
+    "cuda_mapping": [
+      {
+        "physical_index": 0,
+        "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+      },
+      {
+        "physical_index": 1,
+        "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+      },
+      {
+        "physical_index": 2,
+        "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+      },
+      {
+        "physical_index": 3,
+        "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+      }
+    ],
+    "gpus": [
+      "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd",
+      "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567",
+      "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9",
+      "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+    ],
+    "last_resource_check": {
+      "cards": [
+        {
+          "free_mib": 31683.0,
+          "index": 0,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:01:00.0",
+          "pids": [
+            3376523
+          ],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+        },
+        {
+          "free_mib": 31675.0,
+          "index": 1,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:21:00.0",
+          "pids": [
+            3376524
+          ],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+        },
+        {
+          "free_mib": 31675.0,
+          "index": 2,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:41:00.0",
+          "pids": [
+            3376525
+          ],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+        },
+        {
+          "free_mib": 31715.0,
+          "index": 3,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:61:00.0",
+          "pids": [
+            3376526
+          ],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 4,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:81:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 5,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:A1:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 6,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70"
+        },
+        {
+          "free_mib": 27099.0,
+          "index": 7,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:E1:00.0",
+          "pids": [
+            3368366
+          ],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b"
+        }
+      ],
+      "checked_utc": "2026-09-14T14:58:45.437380+00:00",
+      "host_available_bytes": 662357827584,
+      "node": "gpu-04"
+    },
+    "launcher_pid": 3376316,
+    "name": "smoke_reader",
+    "node": "gpu-04",
+    "owned_pids": [
+      3376438,
+      3376496,
+      3376497,
+      3376523,
+      3376524,
+      3376525,
+      3376526
+    ],
+    "physical_inventory": {
+      "cards": [
+        {
+          "free_mib": 32236.0,
+          "index": 0,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:01:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 1,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:21:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 2,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:41:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 3,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:61:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 4,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:81:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 5,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:A1:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23"
+        },
+        {
+          "free_mib": 32236.0,
+          "index": 6,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:C1:00.0",
+          "pids": [],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70"
+        },
+        {
+          "free_mib": 23997.0,
+          "index": 7,
+          "name": "NVIDIA RTX 5000 Ada Generation",
+          "pci_bus_id": "00000000:E1:00.0",
+          "pids": [
+            3368366
+          ],
+          "reserved": false,
+          "total_mib": 32760.0,
+          "uuid": "GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b"
+        }
+      ],
+      "checked_utc": "2026-09-14T14:54:24.495110+00:00",
+      "host_available_bytes": 665245806592,
+      "node": "gpu-04"
+    },
+    "started_utc": "2026-09-14T14:54:24.310884+00:00",
+    "state": "running",
+    "stop_reason": null
+  },
+  "worker_log_sha256": "939fdde3fe6e26376916fa73ca0892d01feec61986b06c0353bf0f83beb41c37",
+  "last_log_lines": [
+    "rapidfuzz not available. Install with: pip install rapidfuzz",
+    "INFO 09-14 18:54:29 [__init__.py:239] Automatically detected platform cuda.",
+    "INFO 09-14 18:54:36 [config.py:717] This model supports multiple tasks: {'reward', 'generate', 'classify', 'score', 'embed'}. Defaulting to 'generate'.",
+    "INFO 09-14 18:54:36 [config.py:1770] Defaulting to use mp for distributed inference",
+    "INFO 09-14 18:54:36 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=8192.",
+    "INFO 09-14 18:54:40 [__init__.py:239] Automatically detected platform cuda.",
+    "INFO 09-14 18:54:42 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='${REPO_ROOT}/memalpha-locomo-generalization/models/reader', speculative_config=None, tokenizer='${REPO_ROOT}/memalpha-locomo-generalization/models/reader', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=42, served_model_name=${REPO_ROOT}/memalpha-locomo-generalization/models/reader, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={\"level\":3,\"custom_ops\":[\"none\"],\"splitting_ops\":[\"vllm.unified_attention\",\"vllm.unified_attention_with_output\"],\"use_inductor\":true,\"compile_sizes\":[],\"use_cudagraph\":true,\"cudagraph_num_of_warmups\":1,\"cudagraph_capture_sizes\":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],\"max_capture_size\":512}",
+    "INFO 09-14 18:54:42 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0, 1, 2, 3], buffer_handle=(4, 10485760, 10, 'psm_2c0f99fe'), local_subscribe_addr='ipc:///tmp/d27cfd9c-97d7-46b5-b070-3b053216c4f6', remote_subscribe_addr=None, remote_addr_ipv6=False)",
+    "INFO 09-14 18:54:45 [__init__.py:239] Automatically detected platform cuda.",
+    "INFO 09-14 18:54:45 [__init__.py:239] Automatically detected platform cuda.",
+    "INFO 09-14 18:54:45 [__init__.py:239] Automatically detected platform cuda.",
+    "INFO 09-14 18:54:45 [__init__.py:239] Automatically detected platform cuda.",
+    "WARNING 09-14 18:54:48 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7fa94f755eb0>",
+    "\u001b[1;36m(VllmWorker rank=3 pid=3376526)\u001b[0;0m INFO 09-14 18:54:48 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_30f88a9f'), local_subscribe_addr='ipc:///tmp/9a585176-db78-463b-9115-ef63d01f9b3c', remote_subscribe_addr=None, remote_addr_ipv6=False)",
+    "WARNING 09-14 18:54:48 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7fe2b2dece90>",
+    "\u001b[1;36m(VllmWorker rank=0 pid=3376523)\u001b[0;0m INFO 09-14 18:54:48 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_ce37c4f1'), local_subscribe_addr='ipc:///tmp/cf17a22f-5b7f-4e6e-b362-4b31fe78d324', remote_subscribe_addr=None, remote_addr_ipv6=False)",
+    "WARNING 09-14 18:54:48 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f76c88c0260>",
+    "\u001b[1;36m(VllmWorker rank=2 pid=3376525)\u001b[0;0m INFO 09-14 18:54:48 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_58688eaa'), local_subscribe_addr='ipc:///tmp/0759ea0a-e440-4fa5-884a-06ab88e2a4a8', remote_subscribe_addr=None, remote_addr_ipv6=False)",
+    "WARNING 09-14 18:54:48 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7fc5048cfe90>",
+    "\u001b[1;36m(VllmWorker rank=1 pid=3376524)\u001b[0;0m INFO 09-14 18:54:48 [shm_broadcast.py:266] vLLM message queue communication handle: Handle(local_reader_ranks=[0], buffer_handle=(1, 10485760, 10, 'psm_b49f6224'), local_subscribe_addr='ipc:///tmp/4c6071ba-1d5c-40d4-bee6-c6ddfa318731', remote_subscribe_addr=None, remote_addr_ipv6=False)",
+    "\u001b[1;36m(VllmWorker rank=3 pid=3376526)\u001b[0;0m INFO 09-14 18:54:49 [utils.py:1055] Found nccl from library libnccl.so.2",
+    "\u001b[1;36m(VllmWorker rank=0 pid=3376523)\u001b[0;0m INFO 09-14 18:54:49 [utils.py:1055] Found nccl from library libnccl.so.2",
+    "\u001b[1;36m(VllmWorker rank=3 pid=3376526)\u001b[0;0m INFO 09-14 18:54:49 [pynccl.py:69] vLLM is using nccl==2.21.5",
+    "\u001b[1;36m(VllmWorker rank=1 pid=3376524)\u001b[0;0m INFO 09-14 18:54:49 [utils.py:1055] Found nccl from library libnccl.so.2",
+    "\u001b[1;36m(VllmWorker rank=0 pid=3376523)\u001b[0;0m INFO 09-14 18:54:49 [pynccl.py:69] vLLM is using nccl==2.21.5",
+    "\u001b[1;36m(VllmWorker rank=1 pid=3376524)\u001b[0;0m INFO 09-14 18:54:49 [pynccl.py:69] vLLM is using nccl==2.21.5",
+    "\u001b[1;36m(VllmWorker rank=2 pid=3376525)\u001b[0;0m INFO 09-14 18:54:49 [utils.py:1055] Found nccl from library libnccl.so.2",
+    "\u001b[1;36m(VllmWorker rank=2 pid=3376525)\u001b[0;0m INFO 09-14 18:54:49 [pynccl.py:69] vLLM is using nccl==2.21.5"
+  ],
+  "evidence": [
+    {
+      "command": "nvidia-smi --query-gpu=index,uuid,memory.used,utilization.gpu,power.draw --format=csv,noheader,nounits",
+      "exit_code": 0,
+      "stdout": "0, GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd, 557, 100, 78.89\n1, GPU-de37a606-2151-0bde-91cd-d26a1f3c4567, 565, 100, 75.10\n2, GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9, 565, 100, 80.31\n3, GPU-b9101d32-5ed2-d959-a417-a11d4aafb957, 525, 100, 70.03\n4, GPU-4e3ac260-fcd2-c7fb-e644-07ec7c55ccda, 3, 0, 17.58\n5, GPU-0b58c2e5-e2d6-bb5f-38df-685b9af7fd23, 3, 0, 11.17\n6, GPU-067e6681-d1a4-b8dc-3b5e-7d6c8e5d8a70, 3, 0, 12.63\n7, GPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b, 5141, 0, 15.58\n",
+      "stderr": ""
+    },
+    {
+      "command": "nvidia-smi --query-compute-apps=gpu_uuid,pid,used_memory --format=csv,noheader,nounits",
+      "exit_code": 0,
+      "stdout": "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd, 3376523, 550\nGPU-de37a606-2151-0bde-91cd-d26a1f3c4567, 3376524, 558\nGPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9, 3376525, 558\nGPU-b9101d32-5ed2-d959-a417-a11d4aafb957, 3376526, 518\nGPU-a6aca83e-7be4-121d-e0c5-31caaca99a6b, 3368366, 5134\n",
+      "stderr": ""
+    },
+    {
+      "command": "nvidia-smi topo -m",
+      "exit_code": 0,
+      "stdout": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tNIC0\tNIC1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-63\t0\t\tN/A\nGPU1\tNODE\t X \tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-63\t0\t\tN/A\nGPU2\tNODE\tNODE\t X \tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-63\t0\t\tN/A\nGPU3\tNODE\tNODE\tNODE\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-63\t0\t\tN/A\nGPU4\tSYS\tSYS\tSYS\tSYS\t X \tNODE\tNODE\tNODE\tNODE\tNODE\t64-127\t1\t\tN/A\nGPU5\tSYS\tSYS\tSYS\tSYS\tNODE\t X \tNODE\tNODE\tNODE\tNODE\t64-127\t1\t\tN/A\nGPU6\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tNODE\tPHB\tPHB\t64-127\t1\t\tN/A\nGPU7\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\t X \tNODE\tNODE\t64-127\t1\t\tN/A\nNIC0\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPHB\tNODE\t X \tPIX\t\t\t\t\nNIC1\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPHB\tNODE\tPIX\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n\n",
+      "stderr": ""
+    },
+    {
+      "command": "nvidia-smi topo -p2p r",
+      "exit_code": 0,
+      "stdout": " \t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\t\u001b[0m\n GPU0\tX\tOK\tOK\tOK\tOK\tOK\tOK\tOK\t\n GPU1\tOK\tX\tOK\tOK\tOK\tOK\tOK\tOK\t\n GPU2\tOK\tOK\tX\tOK\tOK\tOK\tOK\tOK\t\n GPU3\tOK\tOK\tOK\tX\tOK\tOK\tOK\tOK\t\n GPU4\tOK\tOK\tOK\tOK\tX\tOK\tOK\tOK\t\n GPU5\tOK\tOK\tOK\tOK\tOK\tX\tOK\tOK\t\n GPU6\tOK\tOK\tOK\tOK\tOK\tOK\tX\tOK\t\n GPU7\tOK\tOK\tOK\tOK\tOK\tOK\tOK\tX\t\n\nLegend:\n\n  X    = Self\n  OK   = Status Ok\n  CNS  = Chipset not supported\n  GNS  = GPU not supported\n  TNS  = Topology not supported\n  NS   = Not supported\n  U    = Unknown\n",
+      "stderr": ""
+    },
+    {
+      "command": "ps -p 3376438,3376496,3376497,3376523,3376524,3376525,3376526 -o pid,ppid,stat,pcpu,rss,etime,wchan:30,comm",
+      "exit_code": 0,
+      "stdout": "    PID    PPID STAT %CPU   RSS     ELAPSED WCHAN                          COMMAND\n3376438 3376316 Ssl   2.2 1059372     04:28 do_sys_poll                    python\n3376496 3376438 S     0.0 12856       04:15 pipe_read                      python\n3376497 3376438 Sl    1.8 765788      04:15 do_sys_poll                    python\n3376523 3376497 Rl   99.7 1150380     04:10 -                              python\n3376524 3376497 Rl   99.9 1149404     04:10 -                              python\n3376525 3376497 Rl   99.8 1149180     04:10 -                              python\n3376526 3376497 Rl   99.8 1149484     04:10 -                              python\n",
+      "stderr": ""
+    }
+  ],
+  "diagnosis": "Communication initialization stalled before weight loading: unchanged PyNCCL last output, four ranks near 100 percent CPU and GPU with only approximately 0.5 GiB VRAM each.",
+  "root_cause": "Unconfirmed; peer to peer or IB transport is a testable operational hypothesis.",
+  "authorized_retry_environment": {
+    "NCCL_P2P_DISABLE": "1",
+    "NCCL_IB_DISABLE": "1",
+    "NCCL_DEBUG": "INFO"
+  },
+  "scientific_changes": false
+}

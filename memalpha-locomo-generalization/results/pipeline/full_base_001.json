@@ -1,0 +1,31 @@
+{
+  "command": [
+    "${REPO_ROOT}/memalpha-locomo-generalization/.venv/bin/python",
+    "${REPO_ROOT}/memalpha-locomo-generalization/ops.py",
+    "dispatch",
+    "--name",
+    "full_base_001",
+    "--gpu-count",
+    "1",
+    "--min-host-gib",
+    "64",
+    "--",
+    "${REPO_ROOT}/memalpha-locomo-generalization/.venv/bin/python",
+    "${REPO_ROOT}/memalpha-locomo-generalization/run.py",
+    "build",
+    "--arm",
+    "qwen3_base"
+  ],
+  "receipt": {
+    "attempt": "20260914T151045Z_93a27de0",
+    "child_pid": 3387343,
+    "gpus": [
+      "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567"
+    ],
+    "node": "gpu-04",
+    "previous_node_failures": [],
+    "state": "running",
+    "tmux_session": "memalpha_full_base_001"
+  },
+  "utc": "2026-09-14T15:10:46.794861+00:00"
+}

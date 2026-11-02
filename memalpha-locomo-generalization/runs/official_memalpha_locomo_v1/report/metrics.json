@@ -1,0 +1,1328 @@
+{
+  "allocation_definition": "Latest recorded phase invocation elapsed wall time multiplied by visible GPU count, including model loading. Not measured GPU compute time or cumulative lease time across restarts; the reader row is shared by both arms.",
+  "answer_status": {
+    "elapsed_seconds": 3520.2004367079935,
+    "errors": 0,
+    "gpu_allocated_seconds": 14080.801746831974,
+    "gpu_count": 4,
+    "machine": {
+      "hostname": "gpu-04",
+      "pid": 3397314,
+      "utc": "2026-09-14T16:28:17.004041+00:00",
+      "visible_devices": "0,1,2,3"
+    },
+    "status": "complete",
+    "total": 3972,
+    "utc": "2026-09-14T16:28:17.004014+00:00"
+  },
+  "complete": true,
+  "created_utc": "2026-09-14T16:28:56.101424+00:00",
+  "diagnostic_definitions": {
+    "adversarial_clean_strict": "The same exact unambiguous choice accuracy, excluding the four flagged annotation anomalies.",
+    "adversarial_strict": "Exact unambiguous choice accuracy: explicit option label, label plus matching exact option text, or unique exact option text; case, whitespace and terminal sentence punctuation normalized. Conflicts, unresolved responses and missing/error outputs score zero."
+  },
+  "metrics": {
+    "memalpha": {
+      "adversarial_clean_count": 442,
+      "adversarial_clean_strict": 0.7714932126696833,
+      "adversarial_strict": 0.7713004484304933,
+      "categories": {
+        "adversarial": {
+          "completed": 446,
+          "count": 446,
+          "score": 0.8139013452914798
+        },
+        "multi_hop": {
+          "completed": 282,
+          "count": 282,
+          "score": 0.16914209826307605
+        },
+        "open_domain": {
+          "completed": 96,
+          "count": 96,
+          "score": 0.10454394831091579
+        },
+        "single_hop": {
+          "completed": 841,
+          "count": 841,
+          "score": 0.1992650298547139
+        },
+        "temporal": {
+          "completed": 321,
+          "count": 321,
+          "score": 0.18113080394447234
+        }
+      },
+      "category_macro": 0.2935966451329316,
+      "completed": 1986,
+      "conversations": {
+        "conv-26": {
+          "adversarial_clean_count": 45,
+          "adversarial_clean_strict": 0.7333333333333333,
+          "adversarial_strict": 0.723404255319149,
+          "categories": {
+            "adversarial": {
+              "completed": 47,
+              "count": 47,
+              "score": 0.7446808510638298
+            },
+            "multi_hop": {
+              "completed": 32,
+              "count": 32,
+              "score": 0.20041860869235012
+            },
+            "open_domain": {
+              "completed": 13,
+              "count": 13,
+              "score": 0.1284981684981685
+            },
+            "single_hop": {
+              "completed": 70,
+              "count": 70,
+              "score": 0.1789761169616324
+            },
+            "temporal": {
+              "completed": 37,
+              "count": 37,
+              "score": 0.294383066452032
+            }
+          },
+          "category_macro": 0.30939136233360254,
+          "completed": 199,
+          "count": 199,
+          "nonadversarial_micro": 0.2072656139123082,
+          "overall_micro": 0.3341928307269892
+        },
+        "conv-30": {
+          "adversarial_clean_count": 22,
+          "adversarial_clean_strict": 0.7272727272727273,
+          "adversarial_strict": 0.75,
+          "categories": {
+            "adversarial": {
+              "completed": 24,
+              "count": 24,
+              "score": 0.75
+            },
+            "multi_hop": {
+              "completed": 11,
+              "count": 11,
+              "score": 0.2597000070121006
+            },
+            "open_domain": {
+              "completed": 0,
+              "count": 0,
+              "score": null
+            },
+            "single_hop": {
+              "completed": 44,
+              "count": 44,
+              "score": 0.2249689575519554
+            },
+            "temporal": {
+              "completed": 26,
+              "count": 26,
+              "score": 0.308298112144266
+            }
+          },
+          "category_macro": 0.3857417691770805,
+          "completed": 105,
+          "count": 105,
+          "nonadversarial_micro": 0.25643314969345754,
+          "overall_micro": 0.3692484297635244
+        },
+        "conv-41": {
+          "adversarial_clean_count": 41,
+          "adversarial_clean_strict": 0.7317073170731707,
+          "adversarial_strict": 0.7317073170731707,
+          "categories": {
+            "adversarial": {
+              "completed": 41,
+              "count": 41,
+              "score": 0.8048780487804879
+            },
+            "multi_hop": {
+              "completed": 31,
+              "count": 31,
+              "score": 0.1939048430347242
+            },
+            "open_domain": {
+              "completed": 8,
+              "count": 8,
+              "score": 0.039867424242424246
+            },
+            "single_hop": {
+              "completed": 86,
+              "count": 86,
+              "score": 0.2844602108366258
+            },
+            "temporal": {
+              "completed": 27,
+              "count": 27,
+              "score": 0.19916975221986116
+            }
+          },
+          "category_macro": 0.30445605582282464,
+          "completed": 193,
+          "count": 193,
+          "nonadversarial_micro": 0.23796809848619682,
+          "overall_micro": 0.358399745958041
+        },
+        "conv-42": {
+          "adversarial_clean_count": 61,
+          "adversarial_clean_strict": 0.819672131147541,
+          "adversarial_strict": 0.819672131147541,
+          "categories": {
+            "adversarial": {
+              "completed": 61,
+              "count": 61,
+              "score": 0.9016393442622951
+            },
+            "multi_hop": {
+              "completed": 37,
+              "count": 37,
+              "score": 0.08519109190161821
+            },
+            "open_domain": {
+              "completed": 11,
+              "count": 11,
+              "score": 0.051515151515151514
+            },
+            "single_hop": {
+              "completed": 111,
+              "count": 111,
+              "score": 0.1943893510460506
+            },
+            "temporal": {
+              "completed": 40,
+              "count": 40,
+              "score": 0.10587588763575606
+            }
+          },
+          "category_macro": 0.2677221652721743,
+          "completed": 260,
+          "count": 260,
+          "nonadversarial_micro": 0.1483969373797407,
+          "overall_micro": 0.32511919437910924
+        },
+        "conv-43": {
+          "adversarial_clean_count": 64,
+          "adversarial_clean_strict": 0.8125,
+          "adversarial_strict": 0.8125,
+          "categories": {
+            "adversarial": {
+              "completed": 64,
+              "count": 64,
+              "score": 0.8125
+            },
+            "multi_hop": {
+              "completed": 31,
+              "count": 31,
+              "score": 0.11230318029424842
+            },
+            "open_domain": {
+              "completed": 14,
+              "count": 14,
+              "score": 0.08760503940674842
+            },
+            "single_hop": {
+              "completed": 107,
+              "count": 107,
+              "score": 0.1470046057138031
+            },
+            "temporal": {
+              "completed": 26,
+              "count": 26,
+              "score": 0.11520146520146521
+            }
+          },
+          "category_macro": 0.25492285812325305,
+          "completed": 242,
+          "count": 242,
+          "nonadversarial_micro": 0.13164382049118656,
+          "overall_micro": 0.31170495887368266
+        },
+        "conv-44": {
+          "adversarial_clean_count": 35,
+          "adversarial_clean_strict": 0.6857142857142857,
+          "adversarial_strict": 0.6857142857142857,
+          "categories": {
+            "adversarial": {
+              "completed": 35,
+              "count": 35,
+              "score": 0.7714285714285715
+            },
+            "multi_hop": {
+              "completed": 30,
+              "count": 30,
+              "score": 0.21052215209206954
+            },
+            "open_domain": {
+              "completed": 7,
+              "count": 7,
+              "score": 0.09109366823652539
+            },
+            "single_hop": {
+              "completed": 62,
+              "count": 62,
+              "score": 0.2703251218966119
+            },
+            "temporal": {
+              "completed": 24,
+              "count": 24,
+              "score": 0.2089154380102656
+            }
+          },
+          "category_macro": 0.31045699033280877,
+          "completed": 158,
+          "count": 158,
+          "nonadversarial_micro": 0.2335564903272689,
+          "overall_micro": 0.352705369052241
+        },
+        "conv-47": {
+          "adversarial_clean_count": 40,
+          "adversarial_clean_strict": 0.75,
+          "adversarial_strict": 0.75,
+          "categories": {
+            "adversarial": {
+              "completed": 40,
+              "count": 40,
+              "score": 0.75
+            },
+            "multi_hop": {
+              "completed": 20,
+              "count": 20,
+              "score": 0.17489555151490857
+            },
+            "open_domain": {
+              "completed": 13,
+              "count": 13,
+              "score": 0.062102122015915126
+            },
+            "single_hop": {
+              "completed": 83,
+              "count": 83,
+              "score": 0.21024016347917956
+            },
+            "temporal": {
+              "completed": 34,
+              "count": 34,
+              "score": 0.17772147396508012
+            }
+          },
+          "category_macro": 0.27499186219501665,
+          "completed": 190,
+          "count": 190,
+          "nonadversarial_micro": 0.1853180153339313,
+          "overall_micro": 0.3041984331583668
+        },
+        "conv-48": {
+          "adversarial_clean_count": 48,
+          "adversarial_clean_strict": 0.7708333333333334,
+          "adversarial_strict": 0.7708333333333334,
+          "categories": {
+            "adversarial": {
+              "completed": 48,
+              "count": 48,
+              "score": 0.8541666666666666
+            },
+            "multi_hop": {
+              "completed": 21,
+              "count": 21,
+              "score": 0.20373699467965306
+            },
+            "open_domain": {
+              "completed": 10,
+              "count": 10,
+              "score": 0.07380131362889983
+            },
+            "single_hop": {
+              "completed": 118,
+              "count": 118,
+              "score": 0.21494905511585113
+            },
+            "temporal": {
+              "completed": 42,
+              "count": 42,
+              "score": 0.1425853775853776
+            }
+          },
+          "category_macro": 0.2978478815352896,
+          "completed": 239,
+          "count": 239,
+          "nonadversarial_micro": 0.19041394966920422,
+          "overall_micro": 0.3237199346728787
+        },
+        "conv-49": {
+          "adversarial_clean_count": 40,
+          "adversarial_clean_strict": 0.875,
+          "adversarial_strict": 0.875,
+          "categories": {
+            "adversarial": {
+              "completed": 40,
+              "count": 40,
+              "score": 0.925
+            },
+            "multi_hop": {
+              "completed": 37,
+              "count": 37,
+              "score": 0.09286877499258903
+            },
+            "open_domain": {
+              "completed": 13,
+              "count": 13,
+              "score": 0.2659256516371731
+            },
+            "single_hop": {
+              "completed": 73,
+              "count": 73,
+              "score": 0.12524555073221258
+            },
+            "temporal": {
+              "completed": 33,
+              "count": 33,
+              "score": 0.11614115161685166
+            }
+          },
+          "category_macro": 0.3050362257957653,
+          "completed": 196,
+          "count": 196,
+          "nonadversarial_micro": 0.12736385482574789,
+          "overall_micro": 0.2901467415960034
+        },
+        "conv-50": {
+          "adversarial_clean_count": 46,
+          "adversarial_clean_strict": 0.7391304347826086,
+          "adversarial_strict": 0.7391304347826086,
+          "categories": {
+            "adversarial": {
+              "completed": 46,
+              "count": 46,
+              "score": 0.7608695652173914
+            },
+            "multi_hop": {
+              "completed": 32,
+              "count": 32,
+              "score": 0.25797687110257334
+            },
+            "open_domain": {
+              "completed": 7,
+              "count": 7,
+              "score": 0.08766233766233765
+            },
+            "single_hop": {
+              "completed": 87,
+              "count": 87,
+              "score": 0.1685934947734702
+            },
+            "temporal": {
+              "completed": 32,
+              "count": 32,
+              "score": 0.17967069662793347
+            }
+          },
+          "category_macro": 0.2909545930767412,
+          "completed": 204,
+          "count": 204,
+          "nonadversarial_micro": 0.1853543833943322,
+          "overall_micro": 0.3151274145897279
+        }
+      },
+      "count": 1986,
+      "nonadversarial_micro": 0.18406439540391256,
+      "overall_micro": 0.32550814145117085
+    },
+    "qwen3_base": {
+      "adversarial_clean_count": 442,
+      "adversarial_clean_strict": 0.7601809954751131,
+      "adversarial_strict": 0.7600896860986547,
+      "categories": {
+        "adversarial": {
+          "completed": 446,
+          "count": 446,
+          "score": 0.8026905829596412
+        },
+        "multi_hop": {
+          "completed": 282,
+          "count": 282,
+          "score": 0.20546132340070167
+        },
+        "open_domain": {
+          "completed": 96,
+          "count": 96,
+          "score": 0.11474054620524567
+        },
+        "single_hop": {
+          "completed": 841,
+          "count": 841,
+          "score": 0.20116047092855618
+        },
+        "temporal": {
+          "completed": 321,
+          "count": 321,
+          "score": 0.2318846599959546
+        }
+      },
+      "category_macro": 0.31118751669801986,
+      "completed": 1986,
+      "conversations": {
+        "conv-26": {
+          "adversarial_clean_count": 45,
+          "adversarial_clean_strict": 0.7777777777777778,
+          "adversarial_strict": 0.7659574468085106,
+          "categories": {
+            "adversarial": {
+              "completed": 47,
+              "count": 47,
+              "score": 0.8085106382978723
+            },
+            "multi_hop": {
+              "completed": 32,
+              "count": 32,
+              "score": 0.20518497705997707
+            },
+            "open_domain": {
+              "completed": 13,
+              "count": 13,
+              "score": 0.12540400775694893
+            },
+            "single_hop": {
+              "completed": 70,
+              "count": 70,
+              "score": 0.17133578273059002
+            },
+            "temporal": {
+              "completed": 37,
+              "count": 37,
+              "score": 0.2802285552285552
+            }
+          },
+          "category_macro": 0.3181327922147887,
+          "completed": 199,
+          "count": 199,
+          "nonadversarial_micro": 0.2010403467194569,
+          "overall_micro": 0.3445132296550626
+        },
+        "conv-30": {
+          "adversarial_clean_count": 22,
+          "adversarial_clean_strict": 0.8636363636363636,
+          "adversarial_strict": 0.875,
+          "categories": {
+            "adversarial": {
+              "completed": 24,
+              "count": 24,
+              "score": 0.875
+            },
+            "multi_hop": {
+              "completed": 11,
+              "count": 11,
+              "score": 0.31394923033418975
+            },
+            "open_domain": {
+              "completed": 0,
+              "count": 0,
+              "score": null
+            },
+            "single_hop": {
+              "completed": 44,
+              "count": 44,
+              "score": 0.17765099933114364
+            },
+            "temporal": {
+              "completed": 26,
+              "count": 26,
+              "score": 0.37706043956043955
+            }
+          },
+          "category_macro": 0.43591516730644325,
+          "completed": 105,
+          "count": 105,
+          "nonadversarial_micro": 0.26016860410886217,
+          "overall_micro": 0.4007014945982651
+        },
+        "conv-41": {
+          "adversarial_clean_count": 41,
+          "adversarial_clean_strict": 0.8048780487804879,
+          "adversarial_strict": 0.8048780487804879,
+          "categories": {
+            "adversarial": {
+              "completed": 41,
+              "count": 41,
+              "score": 0.926829268292683
+            },
+            "multi_hop": {
+              "completed": 31,
+              "count": 31,
+              "score": 0.1665716294036977
+            },
+            "open_domain": {
+              "completed": 8,
+              "count": 8,
+              "score": 0.015686274509803925
+            },
+            "single_hop": {
+              "completed": 86,
+              "count": 86,
+              "score": 0.24828601688671104
+            },
+            "temporal": {
+              "completed": 27,
+              "count": 27,
+              "score": 0.24299068558327816
+            }
+          },
+          "category_macro": 0.3200727749352348,
+          "completed": 193,
+          "count": 193,
+          "nonadversarial_micro": 0.21843787283288635,
+          "overall_micro": 0.36892516409636644
+        },
+        "conv-42": {
+          "adversarial_clean_count": 61,
+          "adversarial_clean_strict": 0.7540983606557377,
+          "adversarial_strict": 0.7540983606557377,
+          "categories": {
+            "adversarial": {
+              "completed": 61,
+              "count": 61,
+              "score": 0.8032786885245902
+            },
+            "multi_hop": {
+              "completed": 37,
+              "count": 37,
+              "score": 0.1424818526709283
+            },
+            "open_domain": {
+              "completed": 11,
+              "count": 11,
+              "score": 0.021885521885521883
+            },
+            "single_hop": {
+              "completed": 111,
+              "count": 111,
+              "score": 0.22434042460164297
+            },
+            "temporal": {
+              "completed": 40,
+              "count": 40,
+              "score": 0.19446307124248302
+            }
+          },
+          "category_macro": 0.27728991178503326,
+          "completed": 260,
+          "count": 260,
+          "nonadversarial_micro": 0.19192401643239587,
+          "overall_micro": 0.33535722796171835
+        },
+        "conv-43": {
+          "adversarial_clean_count": 64,
+          "adversarial_clean_strict": 0.796875,
+          "adversarial_strict": 0.796875,
+          "categories": {
+            "adversarial": {
+              "completed": 64,
+              "count": 64,
+              "score": 0.8125
+            },
+            "multi_hop": {
+              "completed": 31,
+              "count": 31,
+              "score": 0.23437899079693778
+            },
+            "open_domain": {
+              "completed": 14,
+              "count": 14,
+              "score": 0.09837565671429863
+            },
+            "single_hop": {
+              "completed": 107,
+              "count": 107,
+              "score": 0.2157140034956668
+            },
+            "temporal": {
+              "completed": 26,
+              "count": 26,
+              "score": 0.17856388438372245
+            }
+          },
+          "category_macro": 0.30790650707812517,
+          "completed": 242,
+          "count": 242,
+          "nonadversarial_micro": 0.20430936672313696,
+          "overall_micro": 0.365153170564952
+        },
+        "conv-44": {
+          "adversarial_clean_count": 35,
+          "adversarial_clean_strict": 0.8,
+          "adversarial_strict": 0.8,
+          "categories": {
+            "adversarial": {
+              "completed": 35,
+              "count": 35,
+              "score": 0.8285714285714286
+            },
+            "multi_hop": {
+              "completed": 30,
+              "count": 30,
+              "score": 0.21213651710135084
+            },
+            "open_domain": {
+              "completed": 7,
+              "count": 7,
+              "score": 0.067444120505345
+            },
+            "single_hop": {
+              "completed": 62,
+              "count": 62,
+              "score": 0.18779389202888652
+            },
+            "temporal": {
+              "completed": 24,
+              "count": 24,
+              "score": 0.25296327447062744
+            }
+          },
+          "category_macro": 0.30978184653552765,
+          "completed": 158,
+          "count": 158,
+          "nonadversarial_micro": 0.1995979207289753,
+          "overall_micro": 0.33892749525103777
+        },
+        "conv-47": {
+          "adversarial_clean_count": 40,
+          "adversarial_clean_strict": 0.675,
+          "adversarial_strict": 0.675,
+          "categories": {
+            "adversarial": {
+              "completed": 40,
+              "count": 40,
+              "score": 0.7
+            },
+            "multi_hop": {
+              "completed": 20,
+              "count": 20,
+              "score": 0.19799614192996545
+            },
+            "open_domain": {
+              "completed": 13,
+              "count": 13,
+              "score": 0.07235904192425932
+            },
+            "single_hop": {
+              "completed": 83,
+              "count": 83,
+              "score": 0.21947006685320555
+            },
+            "temporal": {
+              "completed": 34,
+              "count": 34,
+              "score": 0.23397055423813495
+            }
+          },
+          "category_macro": 0.284759160989113,
+          "completed": 190,
+          "count": 190,
+          "nonadversarial_micro": 0.20714403184351554,
+          "overall_micro": 0.3109031830343544
+        },
+        "conv-48": {
+          "adversarial_clean_count": 48,
+          "adversarial_clean_strict": 0.7916666666666666,
+          "adversarial_strict": 0.7916666666666666,
+          "categories": {
+            "adversarial": {
+              "completed": 48,
+              "count": 48,
+              "score": 0.8125
+            },
+            "multi_hop": {
+              "completed": 21,
+              "count": 21,
+              "score": 0.12691897780924696
+            },
+            "open_domain": {
+              "completed": 10,
+              "count": 10,
+              "score": 0.08043107769423559
+            },
+            "single_hop": {
+              "completed": 118,
+              "count": 118,
+              "score": 0.11864305814429128
+            },
+            "temporal": {
+              "completed": 42,
+              "count": 42,
+              "score": 0.10308268355369805
+            }
+          },
+          "category_macro": 0.24831515944029436,
+          "completed": 239,
+          "count": 239,
+          "nonadversarial_micro": 0.11413069571318445,
+          "overall_micro": 0.2543889660302018
+        },
+        "conv-49": {
+          "adversarial_clean_count": 40,
+          "adversarial_clean_strict": 0.7,
+          "adversarial_strict": 0.7,
+          "categories": {
+            "adversarial": {
+              "completed": 40,
+              "count": 40,
+              "score": 0.7
+            },
+            "multi_hop": {
+              "completed": 37,
+              "count": 37,
+              "score": 0.22695507906216708
+            },
+            "open_domain": {
+              "completed": 13,
+              "count": 13,
+              "score": 0.3980202337345195
+            },
+            "single_hop": {
+              "completed": 73,
+              "count": 73,
+              "score": 0.22110958594821353
+            },
+            "temporal": {
+              "completed": 33,
+              "count": 33,
+              "score": 0.23063622355066205
+            }
+          },
+          "category_macro": 0.3553442244591124,
+          "completed": 196,
+          "count": 196,
+          "nonadversarial_micro": 0.23925382125154085,
+          "overall_micro": 0.33328365364918555
+        },
+        "conv-50": {
+          "adversarial_clean_count": 46,
+          "adversarial_clean_strict": 0.6739130434782609,
+          "adversarial_strict": 0.6739130434782609,
+          "categories": {
+            "adversarial": {
+              "completed": 46,
+              "count": 46,
+              "score": 0.782608695652174
+            },
+            "multi_hop": {
+              "completed": 32,
+              "count": 32,
+              "score": 0.27602436916950845
+            },
+            "open_domain": {
+              "completed": 7,
+              "count": 7,
+              "score": 0.03571428571428571
+            },
+            "single_hop": {
+              "completed": 87,
+              "count": 87,
+              "score": 0.23022881427902603
+            },
+            "temporal": {
+              "completed": 32,
+              "count": 32,
+              "score": 0.29107593795093795
+            }
+          },
+          "category_macro": 0.3231304205531864,
+          "completed": 204,
+          "count": 204,
+          "nonadversarial_micro": 0.2432095991780351,
+          "overall_micro": 0.3648388072065174
+        }
+      },
+      "count": 1986,
+      "nonadversarial_micro": 0.20296501139241468,
+      "overall_micro": 0.33764658486622284
+    }
+  },
+  "no_training": true,
+  "operational": {
+    "memalpha": {
+      "build_status": {
+        "completed_chunks": 138,
+        "conversations": 10,
+        "elapsed_seconds": 1110.526018492994,
+        "gpu_allocated_seconds": 1110.526018492994,
+        "gpu_count": 1,
+        "machine": {
+          "hostname": "gpu-04",
+          "pid": 3387081,
+          "utc": "2026-09-14T15:29:13.960471+00:00",
+          "visible_devices": "0"
+        },
+        "status": "complete",
+        "utc": "2026-09-14T15:29:13.960450+00:00"
+      },
+      "latency": {
+        "reader": {
+          "allocated_batch_generation_seconds": 1786.440509942484,
+          "calls": 1986,
+          "mean_batch_generation_seconds": 28.784539938650294,
+          "observed_calls": 1986
+        },
+        "writer": {
+          "allocated_batch_generation_seconds": 1006.8087640737646,
+          "calls": 138,
+          "mean_batch_generation_seconds": 58.17003547735352,
+          "observed_calls": 138
+        }
+      },
+      "memory": [
+        {
+          "compression_fraction": 0.8203327826292188,
+          "episodic_entries": 13,
+          "input_tokens": 16948,
+          "memory_tokens": 3045,
+          "sample_id": "conv-26",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 516,
+            "episodic": 2529,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.44267491302667183,
+          "episodic_entries": 100,
+          "input_tokens": 12935,
+          "memory_tokens": 7209,
+          "sample_id": "conv-30",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 287,
+            "episodic": 6922,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.3439753244672328,
+          "episodic_entries": 161,
+          "input_tokens": 24964,
+          "memory_tokens": 16377,
+          "sample_id": "conv-41",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 519,
+            "episodic": 15858,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.6847536773289751,
+          "episodic_entries": 113,
+          "input_tokens": 21415,
+          "memory_tokens": 6751,
+          "sample_id": "conv-42",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 2,
+            "episodic": 6749,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.5370771204104537,
+          "episodic_entries": 18,
+          "input_tokens": 24948,
+          "memory_tokens": 11549,
+          "sample_id": "conv-43",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 517,
+            "episodic": 11032,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.5477115628451061,
+          "episodic_entries": 86,
+          "input_tokens": 24449,
+          "memory_tokens": 11058,
+          "sample_id": "conv-44",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 517,
+            "episodic": 10541,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.40887494006364156,
+          "episodic_entries": 185,
+          "input_tokens": 22941,
+          "memory_tokens": 13561,
+          "sample_id": "conv-47",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 514,
+            "episodic": 13047,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.5022778025904422,
+          "episodic_entries": 122,
+          "input_tokens": 22390,
+          "memory_tokens": 11144,
+          "sample_id": "conv-48",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 528,
+            "episodic": 10616,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.8219576429276857,
+          "episodic_entries": 46,
+          "input_tokens": 18226,
+          "memory_tokens": 3245,
+          "sample_id": "conv-49",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 516,
+            "episodic": 2729,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.71033360455655,
+          "episodic_entries": 18,
+          "input_tokens": 23351,
+          "memory_tokens": 6764,
+          "sample_id": "conv-50",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 512,
+            "episodic": 6252,
+            "semantic": 0
+          }
+        }
+      ],
+      "memory_summary": {
+        "frozen_conversations": 10,
+        "matched_input_tokens": 212567,
+        "measured_conversations": 10,
+        "scheduled_conversations": 10,
+        "scheduled_input_tokens": 212567,
+        "store_tokens_total": {
+          "core": 4428,
+          "episodic": 86275,
+          "semantic": 0
+        },
+        "stored_tokens_mean": 9070.3,
+        "stored_tokens_total": 90703,
+        "token_reduction_fraction": 0.5732968899217659
+      },
+      "token_totals": {
+        "input_tokens": 10181583,
+        "output_tokens": 272505
+      },
+      "usage": {
+        "reader_calls": 1986,
+        "reader_completion_tokens": 33575,
+        "reader_generation_wall_seconds": 1786.440509942484,
+        "reader_latency_observed_calls": 1986,
+        "reader_observed_batch_latency_seconds": 57166.096318159485,
+        "reader_prompt_tokens": 9619863,
+        "reader_retry_calls": 0,
+        "reader_truncated": 0,
+        "tool_calls": 1004,
+        "tool_errors": 4,
+        "writer_calls": 138,
+        "writer_completion_tokens": 238930,
+        "writer_generation_wall_seconds": 1006.8087640737646,
+        "writer_latency_observed_calls": 138,
+        "writer_observed_batch_latency_seconds": 8027.464895874786,
+        "writer_prompt_tokens": 561720,
+        "writer_truncated": 98
+      }
+    },
+    "qwen3_base": {
+      "build_status": {
+        "completed_chunks": 138,
+        "conversations": 10,
+        "elapsed_seconds": 755.9624008669634,
+        "gpu_allocated_seconds": 755.9624008669634,
+        "gpu_count": 1,
+        "machine": {
+          "hostname": "gpu-04",
+          "pid": 3387343,
+          "utc": "2026-09-14T15:23:22.573958+00:00",
+          "visible_devices": "1"
+        },
+        "status": "complete",
+        "utc": "2026-09-14T15:23:22.573940+00:00"
+      },
+      "latency": {
+        "reader": {
+          "allocated_batch_generation_seconds": 1536.7005782048145,
+          "calls": 1986,
+          "mean_batch_generation_seconds": 24.70082494356186,
+          "observed_calls": 1986
+        },
+        "writer": {
+          "allocated_batch_generation_seconds": 698.7921705999764,
+          "calls": 138,
+          "mean_batch_generation_seconds": 43.19724679452686,
+          "observed_calls": 138
+        }
+      },
+      "memory": [
+        {
+          "compression_fraction": 0.7973802218550862,
+          "episodic_entries": 13,
+          "input_tokens": 16948,
+          "memory_tokens": 3434,
+          "sample_id": "conv-26",
+          "semantic_entries": 11,
+          "store_tokens": {
+            "core": 67,
+            "episodic": 2236,
+            "semantic": 1131
+          }
+        },
+        {
+          "compression_fraction": 0.7820641669887901,
+          "episodic_entries": 14,
+          "input_tokens": 12935,
+          "memory_tokens": 2819,
+          "sample_id": "conv-30",
+          "semantic_entries": 8,
+          "store_tokens": {
+            "core": 48,
+            "episodic": 2193,
+            "semantic": 578
+          }
+        },
+        {
+          "compression_fraction": 0.2610559205255568,
+          "episodic_entries": 338,
+          "input_tokens": 24964,
+          "memory_tokens": 18447,
+          "sample_id": "conv-41",
+          "semantic_entries": 0,
+          "store_tokens": {
+            "core": 131,
+            "episodic": 18316,
+            "semantic": 0
+          }
+        },
+        {
+          "compression_fraction": 0.748914312397852,
+          "episodic_entries": 29,
+          "input_tokens": 21415,
+          "memory_tokens": 5377,
+          "sample_id": "conv-42",
+          "semantic_entries": 19,
+          "store_tokens": {
+            "core": 0,
+            "episodic": 3187,
+            "semantic": 2190
+          }
+        },
+        {
+          "compression_fraction": 0.7894019560686227,
+          "episodic_entries": 27,
+          "input_tokens": 24948,
+          "memory_tokens": 5254,
+          "sample_id": "conv-43",
+          "semantic_entries": 23,
+          "store_tokens": {
+            "core": 203,
+            "episodic": 3203,
+            "semantic": 1848
+          }
+        },
+        {
+          "compression_fraction": 0.7891120291218454,
+          "episodic_entries": 25,
+          "input_tokens": 24449,
+          "memory_tokens": 5156,
+          "sample_id": "conv-44",
+          "semantic_entries": 21,
+          "store_tokens": {
+            "core": 0,
+            "episodic": 3260,
+            "semantic": 1896
+          }
+        },
+        {
+          "compression_fraction": 0.8337910291617627,
+          "episodic_entries": 13,
+          "input_tokens": 22941,
+          "memory_tokens": 3813,
+          "sample_id": "conv-47",
+          "semantic_entries": 9,
+          "store_tokens": {
+            "core": 135,
+            "episodic": 2858,
+            "semantic": 820
+          }
+        },
+        {
+          "compression_fraction": 0.858820902188477,
+          "episodic_entries": 15,
+          "input_tokens": 22390,
+          "memory_tokens": 3161,
+          "sample_id": "conv-48",
+          "semantic_entries": 9,
+          "store_tokens": {
+            "core": 95,
+            "episodic": 2485,
+            "semantic": 581
+          }
+        },
+        {
+          "compression_fraction": 0.8271699769559969,
+          "episodic_entries": 20,
+          "input_tokens": 18226,
+          "memory_tokens": 3150,
+          "sample_id": "conv-49",
+          "semantic_entries": 15,
+          "store_tokens": {
+            "core": 76,
+            "episodic": 2295,
+            "semantic": 779
+          }
+        },
+        {
+          "compression_fraction": 0.793756156053274,
+          "episodic_entries": 20,
+          "input_tokens": 23351,
+          "memory_tokens": 4816,
+          "sample_id": "conv-50",
+          "semantic_entries": 16,
+          "store_tokens": {
+            "core": 175,
+            "episodic": 3452,
+            "semantic": 1189
+          }
+        }
+      ],
+      "memory_summary": {
+        "frozen_conversations": 10,
+        "matched_input_tokens": 212567,
+        "measured_conversations": 10,
+        "scheduled_conversations": 10,
+        "scheduled_input_tokens": 212567,
+        "store_tokens_total": {
+          "core": 930,
+          "episodic": 43485,
+          "semantic": 11012
+        },
+        "stored_tokens_mean": 5542.7,
+        "stored_tokens_total": 55427,
+        "token_reduction_fraction": 0.7392492719942418
+      },
+      "token_totals": {
+        "input_tokens": 8366572,
+        "output_tokens": 127240
+      },
+      "usage": {
+        "reader_calls": 1986,
+        "reader_completion_tokens": 32043,
+        "reader_generation_wall_seconds": 1536.7005782048145,
+        "reader_latency_observed_calls": 1986,
+        "reader_observed_batch_latency_seconds": 49055.838337913854,
+        "reader_prompt_tokens": 7855700,
+        "reader_retry_calls": 0,
+        "reader_truncated": 0,
+        "tool_calls": 779,
+        "tool_errors": 38,
+        "writer_calls": 138,
+        "writer_completion_tokens": 95197,
+        "writer_generation_wall_seconds": 698.7921705999764,
+        "writer_latency_observed_calls": 138,
+        "writer_observed_batch_latency_seconds": 5961.220057644707,
+        "writer_prompt_tokens": 510872,
+        "writer_truncated": 15
+      }
+    }
+  },
+  "option_seed": 42,
+  "paired_memalpha_minus_base": {
+    "adversarial_clean_strict": 0.011312217194570207,
+    "adversarial_strict": 0.011210762331838597,
+    "categories": {
+      "adversarial": 0.011210762331838597,
+      "multi_hop": -0.036319225137625616,
+      "open_domain": -0.010196597894329876,
+      "single_hop": -0.001895441073842291,
+      "temporal": -0.05075385605148225
+    },
+    "category_macro": -0.017590871565088262,
+    "conversations": {
+      "conv-26": -0.010320398928073404,
+      "conv-30": -0.031453064834740696,
+      "conv-41": -0.010525418138325415,
+      "conv-42": -0.010238033582609107,
+      "conv-43": -0.05344821169126934,
+      "conv-44": 0.013777873801203211,
+      "conv-47": -0.00670474987598757,
+      "conv-48": 0.0693309686426769,
+      "conv-49": -0.04313691205318215,
+      "conv-50": -0.049711392616789474
+    },
+    "nonadversarial_micro": -0.018900615988502123,
+    "overall_micro": -0.012138443415051992
+  },
+  "phase_allocations": [
+    {
+      "allocated_gpu_hours": 0.3084794495813872,
+      "allocated_gpu_seconds": 1110.526018492994,
+      "elapsed_seconds": 1110.526018492994,
+      "gpu_count": 1,
+      "phase": "writer_memalpha",
+      "status": "complete",
+      "status_path": "runs/official_memalpha_locomo_v1/memalpha/build_status.json"
+    },
+    {
+      "allocated_gpu_hours": 0.20998955579637874,
+      "allocated_gpu_seconds": 755.9624008669634,
+      "elapsed_seconds": 755.9624008669634,
+      "gpu_count": 1,
+      "phase": "writer_qwen3_base",
+      "status": "complete",
+      "status_path": "runs/official_memalpha_locomo_v1/qwen3_base/build_status.json"
+    },
+    {
+      "allocated_gpu_hours": 3.911333818564437,
+      "allocated_gpu_seconds": 14080.801746831974,
+      "elapsed_seconds": 3520.2004367079935,
+      "gpu_count": 4,
+      "phase": "reader_shared",
+      "status": "complete",
+      "status_path": "runs/official_memalpha_locomo_v1/answer_status.json"
+    }
+  ],
+  "protocol": "Official LoCoMo category-specific task prompts and compatible scoring applied to Mem-alpha structured memory",
+  "reader_seed": 42,
+  "report_provenance": {
+    "lease_receipts_path": "results/operations",
+    "outside_scientific_source_freeze": true,
+    "reader_runtime": {
+      "environment": {
+        "NCCL_DEBUG": "INFO",
+        "NCCL_IB_DISABLE": "1",
+        "NCCL_P2P_DISABLE": "1"
+      },
+      "path": "results/setup/reader_runtime.json",
+      "sha256": "dc01787ad73d6506d3daa82da31eb79b112c0fd6f5185f293135992f7fc4ada1"
+    },
+    "source_path": "report.py",
+    "source_sha256": "19b440e73517d07af6e5ed896e11cfb3447144ba423633fd3db6dfb24b4257df"
+  },
+  "run_id": "official_memalpha_locomo_v1",
+  "synthetic": false,
+  "token_totals": {
+    "input_tokens": 18548155,
+    "output_tokens": 399745
+  }
+}

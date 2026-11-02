@@ -1,0 +1,36 @@
+{
+  "command": [
+    "${REPO_ROOT}/memalpha-locomo-generalization/.venv/bin/python",
+    "${REPO_ROOT}/memalpha-locomo-generalization/ops.py",
+    "dispatch",
+    "--name",
+    "full_reader_001",
+    "--gpu-count",
+    "4",
+    "--min-host-gib",
+    "128",
+    "--",
+    "env",
+    "NCCL_DEBUG=INFO",
+    "NCCL_IB_DISABLE=1",
+    "NCCL_P2P_DISABLE=1",
+    "${REPO_ROOT}/memalpha-locomo-generalization/.venv/bin/python",
+    "${REPO_ROOT}/memalpha-locomo-generalization/run.py",
+    "answer"
+  ],
+  "receipt": {
+    "attempt": "20260914T152935Z_889e57d8",
+    "child_pid": 3397314,
+    "gpus": [
+      "GPU-1b2a14b7-b84f-4031-0751-f4b5400631bd",
+      "GPU-de37a606-2151-0bde-91cd-d26a1f3c4567",
+      "GPU-5fc7a3b9-6fa8-b27e-10bd-ad2f5f847fb9",
+      "GPU-b9101d32-5ed2-d959-a417-a11d4aafb957"
+    ],
+    "node": "gpu-04",
+    "previous_node_failures": [],
+    "state": "running",
+    "tmux_session": "memalpha_full_reader_001"
+  },
+  "utc": "2026-09-14T15:29:36.809291+00:00"
+}

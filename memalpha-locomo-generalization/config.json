@@ -1,0 +1,17 @@
+{
+  "run_id": "official_memalpha_locomo_v1",
+  "seed": 42,
+  "dataset_sha256": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+  "source_commit": "9c0e1f6482f8ea7a322012a8155247966285946f",
+  "locomo_commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+  "models": {
+    "memalpha": {"repo": "YuWangX/Memalpha-4B", "revision": "8c5683d0196a846ef1048b1fd0d4f9c7196e22d6"},
+    "qwen3_base": {"repo": "Qwen/Qwen3-4B", "revision": "1cfa9a7208912126459214e8b04321603b3df60c"},
+    "reader": {"repo": "Qwen/Qwen3-32B", "revision": "9216db5781bf21249d130ec9da846c4624c16137"}
+  },
+  "writer": {"max_model_len": 32768, "tensor_parallel_size": 1, "gpu_memory_utilization": 0.88, "max_num_seqs": 10, "max_num_batched_tokens": 8192, "temperature": 0.0, "max_tokens": 2048, "seed": 42, "enable_thinking": false},
+  "reader": {"max_model_len": 32768, "tensor_parallel_size": 4, "gpu_memory_utilization": 0.88, "max_num_seqs": 32, "max_num_batched_tokens": 8192, "temperature": 0.7, "max_tokens": 2048, "seed": 42, "enable_thinking": false},
+  "writer_batch_size": 10,
+  "reader_batch_size": 32,
+  "training_enabled": false
+}

@@ -1,0 +1,5 @@
+INFO 09-14 18:46:37 [__init__.py:243] No platform detected, vLLM is running on UnspecifiedPlatform
+.....                                                                    [100%]
+5 passed in 7.19s
+rapidfuzz not available. Install with: pip install rapidfuzz
+{"state": "ready", "packages": 203, "tiktoken_cache_files": 1}

@@ -1,0 +1,74 @@
+[
+  {
+    "abstention_option": null,
+    "anomaly": [],
+    "answer": "Pixel",
+    "category": 4,
+    "evidence": [
+      "D1:1"
+    ],
+    "option_map": null,
+    "qa_index": 0,
+    "question": "What is Maya's dog named?",
+    "reader_prompt": "\nBased on the above context, write an answer in the form of a short phrase for the following question. Answer with exact words from the context whenever possible.\n\nQuestion: What is Maya's dog named? Short answer:\n",
+    "sample_id": "synthetic-1"
+  },
+  {
+    "abstention_option": null,
+    "anomaly": [],
+    "answer": "Pixel, Luna",
+    "category": 1,
+    "evidence": [
+      "D1:1",
+      "D2:1"
+    ],
+    "option_map": null,
+    "qa_index": 1,
+    "question": "What are the names of Maya's two pets?",
+    "reader_prompt": "\nBased on the above context, write an answer in the form of a short phrase for the following question. Answer with exact words from the context whenever possible.\n\nQuestion: What are the names of Maya's two pets? Short answer:\n",
+    "sample_id": "synthetic-1"
+  },
+  {
+    "abstention_option": null,
+    "anomaly": [],
+    "answer": "2 January 2024",
+    "category": 2,
+    "evidence": [
+      "D2:1"
+    ],
+    "option_map": null,
+    "qa_index": 2,
+    "question": "When did Maya adopt Luna?",
+    "reader_prompt": "\nBased on the above context, write an answer in the form of a short phrase for the following question. Answer with exact words from the context whenever possible.\n\nQuestion: When did Maya adopt Luna? Use DATE of CONVERSATION to answer with an approximate date. Short answer:\n",
+    "sample_id": "synthetic-1"
+  },
+  {
+    "abstention_option": null,
+    "anomaly": [],
+    "answer": "France",
+    "category": 3,
+    "evidence": [
+      "D1:1"
+    ],
+    "option_map": null,
+    "qa_index": 3,
+    "question": "Which country does Maya live in?",
+    "reader_prompt": "\nBased on the above context, write an answer in the form of a short phrase for the following question. Answer with exact words from the context whenever possible.\n\nQuestion: Which country does Maya live in? Short answer:\n",
+    "sample_id": "synthetic-1"
+  },
+  {
+    "abstention_option": "b",
+    "adversarial_answer": "June 15",
+    "anomaly": [],
+    "category": 5,
+    "evidence": [],
+    "option_map": {
+      "a": "June 15",
+      "b": "Not mentioned in the conversation"
+    },
+    "qa_index": 4,
+    "question": "What is Maya's dog's birthday?",
+    "reader_prompt": "\nBased on the above context, answer the following question.\n\nQuestion: What is Maya's dog's birthday? Select the correct answer: (a) June 15 (b) Not mentioned in the conversation.  Short answer:\n",
+    "sample_id": "synthetic-1"
+  }
+]

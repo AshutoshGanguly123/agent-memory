@@ -1,0 +1,7 @@
+{
+  "integrity": "${REPO_ROOT}/memalpha-locomo-generalization/runs/official_memalpha_locomo_v1/verification/integrity.json",
+  "manifest": "${REPO_ROOT}/memalpha-locomo-generalization/runs/official_memalpha_locomo_v1/run_manifest.json",
+  "report": "${REPO_ROOT}/memalpha-locomo-generalization/runs/official_memalpha_locomo_v1/report/report.md",
+  "status": "complete",
+  "utc": "2026-09-14T16:29:33.864623+00:00"
+}
