@@ -1,0 +1,202 @@
+[
+  {
+    "arm": "memalpha",
+    "category": "adversarial",
+    "sample_id": "conv-50",
+    "qa_index": "183",
+    "score": "0.0",
+    "question": "What does Dave find satisfying about destroying old cars?",
+    "prediction": "(b) transforming something old and beat-up into something beautiful.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "adversarial",
+    "sample_id": "conv-30",
+    "qa_index": "92",
+    "score": "0.0",
+    "question": "What does Jon's tattoo symbolize?",
+    "prediction": "(b) freedom and expressing himself through dance.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "multi_hop",
+    "sample_id": "conv-26",
+    "qa_index": "23",
+    "score": "0.13333333333333336",
+    "question": "What books has Melanie read?",
+    "prediction": "Short answer: Melanie has read \"Becoming Nicole\" by Amy Ellis Nutt and \"Charlotte's Web.\"",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "multi_hop",
+    "sample_id": "conv-48",
+    "qa_index": "86",
+    "score": "0.24848484848484845",
+    "question": "What gifts has Deborah received?",
+    "prediction": "Short answer: A letter from the group members.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "open_domain",
+    "sample_id": "conv-43",
+    "qa_index": "27",
+    "score": "0.11764705882352941",
+    "question": "Which popular time management technique does Tim use to prepare for exams?",
+    "prediction": "The context does not mention a specific time management technique that Tim uses to prepare for exams.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "open_domain",
+    "sample_id": "conv-43",
+    "qa_index": "5",
+    "score": "0.0",
+    "question": "Based on Tim's collections, what is a shop that he would enjoy visiting in New York city?",
+    "prediction": "A shop Tim would enjoy visiting in New York City is a fantasy book store or a Harry Potter-themed shop.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "single_hop",
+    "sample_id": "conv-42",
+    "qa_index": "162",
+    "score": "0.0",
+    "question": "What game did Nate play at the game convention he attended on 9 October, 2022?",
+    "prediction": "The information about Nate attending a game convention on 9 October, 2022, and the specific game he played is not available in the provided context.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "single_hop",
+    "sample_id": "conv-41",
+    "qa_index": "121",
+    "score": "0.11764705882352941",
+    "question": "How did the flood impact the homes in John's old area?",
+    "prediction": "The provided context does not mention a flood impacting the homes in John's old area.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "temporal",
+    "sample_id": "conv-41",
+    "qa_index": "43",
+    "score": "0.0",
+    "question": "When was John's old area hit with a flood?",
+    "prediction": "Short answer: The context does not mention a flood in John's old area.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "memalpha",
+    "category": "temporal",
+    "sample_id": "conv-41",
+    "qa_index": "16",
+    "score": "0.3636363636363636",
+    "question": "When did John get his degree?",
+    "prediction": "Short answer: John graduated with his degree last week, as mentioned in the conversation on 2 April, 2023.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "adversarial",
+    "sample_id": "conv-49",
+    "qa_index": "191",
+    "score": "0.0",
+    "question": "What dance activity did Evan and his partner try in a recent weekend?",
+    "prediction": "(b) snowshoeing.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "adversarial",
+    "sample_id": "conv-47",
+    "qa_index": "182",
+    "score": "0.0",
+    "question": "What games were played at the gaming tournament organized by James on 31 October, 2022?",
+    "prediction": "(b) fortnite, overwatch, apex legends.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "multi_hop",
+    "sample_id": "conv-26",
+    "qa_index": "32",
+    "score": "0.4148148148148148",
+    "question": "What LGBTQ+ events has Caroline participated in?",
+    "prediction": "Caroline has participated in an LGBTQ+ pride parade, an LGBTQ support group, an LGBTQ conference, and is involved in an LGBTQ activist group called 'Connected LGBTQ Activists'.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "multi_hop",
+    "sample_id": "conv-26",
+    "qa_index": "24",
+    "score": "0.25",
+    "question": "What does Melanie do to destress?",
+    "prediction": "Melanie reads, paints, and runs to destress.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "open_domain",
+    "sample_id": "conv-26",
+    "qa_index": "77",
+    "score": "0.0",
+    "question": "Would Melanie go on another roadtrip soon?",
+    "prediction": "Short answer: Melanie might go on another road trip soon, as she and Caroline discussed the importance of family time and nature, and Melanie loves camping and road trips.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "open_domain",
+    "sample_id": "conv-42",
+    "qa_index": "68",
+    "score": "0.0",
+    "question": "How many hikes has Joanna been on?",
+    "prediction": "The context does not specify the exact number of hikes Joanna has been on.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "single_hop",
+    "sample_id": "conv-42",
+    "qa_index": "172",
+    "score": "0.1904761904761905",
+    "question": "How does Nate feel about Joanna's ability to bounce back from setbacks?",
+    "prediction": "Nate believes in Joanna and encourages her not to give up on her dreams.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "single_hop",
+    "sample_id": "conv-48",
+    "qa_index": "113",
+    "score": "0.26666666666666666",
+    "question": "Why did Deborah spend time in the garden?",
+    "prediction": "Deborah spent time in the garden to find peace and reflection.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "temporal",
+    "sample_id": "conv-47",
+    "qa_index": "59",
+    "score": "0.4615384615384615",
+    "question": "When did John and his gaming friends organize the charity tournament?",
+    "prediction": "Short answer: 31 October, 2022",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "temporal",
+    "sample_id": "conv-26",
+    "qa_index": "16",
+    "score": "0.0",
+    "question": "When did Melanie sign up for a pottery class?",
+    "prediction": "The context does not specify the exact date Melanie signed up for a pottery class. Short answer: **Not specified**.",
+    "label_todo": "writer_omit|retrieval_miss|reader_fail_despite_evidence"
+  }
+]

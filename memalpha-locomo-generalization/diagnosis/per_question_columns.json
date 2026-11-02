@@ -1,0 +1,16 @@
+[
+  "arm",
+  "sample_id",
+  "qa_index",
+  "category",
+  "category_name",
+  "status",
+  "score",
+  "strict_option_correct",
+  "strict_option_interpretation",
+  "adversarial_clean_eligible",
+  "anomaly",
+  "question",
+  "prediction",
+  "raw_response"
+]

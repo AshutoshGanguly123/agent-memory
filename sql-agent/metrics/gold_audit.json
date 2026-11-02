@@ -1,0 +1,20 @@
+{
+  "n_rows": 546,
+  "columns": [
+    "uuid",
+    "template_uuid",
+    "question",
+    "answer",
+    "benchmark_query",
+    "execution_results",
+    "query_type",
+    "sql_category",
+    "bio_category"
+  ],
+  "gold_column": "execution_results",
+  "parse_ok_strict": 546,
+  "empty_gold_lists": 105,
+  "malformed": [],
+  "malformed_count": 0,
+  "pass": true
+}

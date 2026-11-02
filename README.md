@@ -43,3 +43,9 @@ Details, caveats, and code: [`sql-agent/README.md`](sql-agent/README.md). Metric
 ## License
 
 MIT for original packaging here; upstream licenses apply to vendored/benchmark assets.
+
+
+## ITER 3 evidence upgrades
+
+- **SQL agent:** gold audit pass (0 malformed / 546), cost proxies, `--no-controller` ablation harness (`sql-agent/metrics/`, `experiment1/ABLATION.md`).
+- **Mem-α diagnosis:** method×category matrix + unlabeled failure sample for stage tagging — [`memalpha-locomo-generalization/diagnosis/`](memalpha-locomo-generalization/diagnosis/).

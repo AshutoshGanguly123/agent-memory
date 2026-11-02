@@ -1,0 +1,24 @@
+{
+  "status": "harness_ready_awaiting_matched_rerun",
+  "protocol": {
+    "model": "Qwen3.8-27B via vLLM (same endpoint)",
+    "db": "local biomedsql.sqlite",
+    "grader": "eval_metrics.py strict_gold optional",
+    "arms": [
+      "controller+db_agent (current)",
+      "db_agent_only (no controller talk)"
+    ],
+    "budget": "same max talk rounds / SQL revise rounds"
+  },
+  "current_full_system": {
+    "n": 546,
+    "mean_EX": 0.6923076923076923,
+    "mean_talk_turns": 1.098901098901099,
+    "mean_n_queries": 2.565934065934066,
+    "mean_sql_rounds": 2.2967032967032965,
+    "mean_sql_errors": 0.029304029304029304,
+    "note": "Token/latency fields were not logged in exp1-full-merged; talk_turns/n_queries/rounds are the cost proxies. Controller ablation (with vs without) requires a matched re-run \u2014 see controller_ablation.json status."
+  },
+  "controller_only_delta_EX": null,
+  "how_to_run": "python experiment1/run.py --no-controller  # flag to add; then merge metrics"
+}

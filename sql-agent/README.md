@@ -47,6 +47,19 @@ Weights and the 73MB raw run dumps are **not** in git. Metrics summaries are.
 - [`papers/Controller-Guided_ChEMBL_Search_for_Agentic_Molecular_Design.pdf`](papers/Controller-Guided_ChEMBL_Search_for_Agentic_Molecular_Design.pdf) — controller/DB dialogue lineage
 - [`papers/our_technical_note.pdf`](papers/our_technical_note.pdf) — local technical write-up
 
+
+
+## Evaluation hardening (ITER 3)
+
+- **Gold audit** (`metrics/gold_audit.json`): 546 rows, gold column `execution_results`, **malformed=0** (strict parse), empty gold lists=105 (valid for some templates). `pass=True`.
+- **Grader**: `eval_metrics.parse_gold_strict` / `GoldParseError` — fail loud on malformed gold when `strict_gold=True`.
+- **Cost proxies** (full system, n=546): mean talk_turns=1.10, mean SQL queries=2.57, mean rounds=2.30, EX=0.692. Token/latency not logged in exp1 merge — next run will record them.
+- **Controller ablation**: `--no-controller` skips talk and searches from the raw question (matched model/DB/grader). Protocol in `experiment1/ABLATION.md`; `metrics/controller_ablation.json` awaits the matched re-run numbers.
+
+```bash
+python experiment1/run.py --no-controller --one-per-template
+```
+
 ## Limitations / non-claims
 
 - Local **SQLite** KB + schema projection is not identical to the paper’s BigQuery deployment.

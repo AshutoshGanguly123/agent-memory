@@ -1,0 +1,62 @@
+[
+  {
+    "arm": "memalpha",
+    "category": "adversarial",
+    "n": 446,
+    "mean_score": 0.8139013452914798
+  },
+  {
+    "arm": "memalpha",
+    "category": "multi_hop",
+    "n": 282,
+    "mean_score": 0.16914209826307605
+  },
+  {
+    "arm": "memalpha",
+    "category": "open_domain",
+    "n": 96,
+    "mean_score": 0.10454394831091579
+  },
+  {
+    "arm": "memalpha",
+    "category": "single_hop",
+    "n": 841,
+    "mean_score": 0.1992650298547139
+  },
+  {
+    "arm": "memalpha",
+    "category": "temporal",
+    "n": 321,
+    "mean_score": 0.18113080394447234
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "adversarial",
+    "n": 446,
+    "mean_score": 0.8026905829596412
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "multi_hop",
+    "n": 282,
+    "mean_score": 0.20546132340070167
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "open_domain",
+    "n": 96,
+    "mean_score": 0.11474054620524567
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "single_hop",
+    "n": 841,
+    "mean_score": 0.20116047092855618
+  },
+  {
+    "arm": "qwen3_base",
+    "category": "temporal",
+    "n": 321,
+    "mean_score": 0.2318846599959546
+  }
+]

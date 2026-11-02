@@ -67,13 +67,19 @@ def run_one(args, log: Log, row: dict) -> dict:
     question = row["question"]
     print(f"\n=== {qid}: {question} ===", flush=True)
 
-    need = seed_need(args, log, qid, question)
-    log.write({"uuid": qid, "action": "seed", "question": question, "need": need})
-    print(f"[{qid}] seed need: {need[:200]}", flush=True)
-
-    session = talk(args, log, qid, need)
-    brief = session["brief"]
-    print(f"[{qid}] brief ({session['stop_reason']}, {session['n_turns']} turns): {brief[:200]}", flush=True)
+    if getattr(args, "no_controller", False):
+        need = question
+        brief = question
+        session = {"brief": brief, "stop_reason": "no_controller", "n_turns": 0}
+        log.write({"uuid": qid, "action": "seed", "question": question, "need": need, "no_controller": True})
+        print(f"[{qid}] no-controller: using raw question as brief", flush=True)
+    else:
+        need = seed_need(args, log, qid, question)
+        log.write({"uuid": qid, "action": "seed", "question": question, "need": need})
+        print(f"[{qid}] seed need: {need[:200]}", flush=True)
+        session = talk(args, log, qid, need)
+        brief = session["brief"]
+        print(f"[{qid}] brief ({session['stop_reason']}, {session['n_turns']} turns): {brief[:200]}", flush=True)
 
     search = db_react(args, log, qid, brief, args.db)
     answer = write_answer(args, log, qid, question, brief, search)
@@ -124,6 +130,11 @@ def main() -> None:
     parser.add_argument("--out", type=Path, default=None, help="jsonl results path")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--one-per-template", action="store_true")
+    parser.add_argument(
+        "--no-controller",
+        action="store_true",
+        help="Matched ablation: skip controller talk; DB agent searches from the raw question",
+    )
     parser.add_argument("--uuid", nargs="+", default=None)
     parser.add_argument("--reason-temperature", type=float, default=0.4)
     parser.add_argument("--talk-tokens", type=int, default=800)
