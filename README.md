@@ -1,44 +1,45 @@
 # autonomous-agent-memory
 
-Protocols and code for **long-horizon LLM agents with explicit memory**: A-Mem on LoCoMo (NVIDIA HPC reproduction stack) and an inference-only Mem-α → LoCoMo generalization comparison.
+Long-horizon **LLM agents** with explicit memory and tool use — plus a biomedical **SQL agent** that beats published BiomedSQL baselines under a transparent local protocol.
 
 **Author:** Ashutosh Ganguly — AI researcher @ MBZUAI.
 
 ## Tracks
 
-| Track | Path | Question |
+| Track | Path | Headline |
 |-------|------|----------|
-| A-Mem @ LoCoMo | [`a-mem-locomo/`](a-mem-locomo/) | Reproduce / adapt A-Mem with Llama-3.2-3B-Instruct; six primary metrics; resumable CUDA/Slurm runners |
-| Mem-α generalization | [`memalpha-locomo-generalization/`](memalpha-locomo-generalization/) | Does RL-trained Mem-α-4B writer beat frozen Qwen3-4B on LoCoMo under a frozen protocol? |
+| **SQL agent (BiomedSQL)** | [`sql-agent/`](sql-agent/) | **69.2% EX** on 546 Q vs paper Gemini **58.1%** / BMSQL **62.6%** |
+| A-Mem @ LoCoMo | [`a-mem-locomo/`](a-mem-locomo/) | Resumable A-Mem reproduction stack; six primary metrics; not exact paper-score claim |
+| Mem-α generalization | [`memalpha-locomo-generalization/`](memalpha-locomo-generalization/) | Inference-only Mem-α-4B vs base Qwen3-4B on full LoCoMo (3972/3972); base slightly higher overall micro |
 
-## Headline results (Mem-α track)
+## Strongest systems result (SQL agent)
 
-Full coverage **3972/3972** QA, **20/20** memories. From committed `runs/official_memalpha_locomo_v1/report/`:
+Controller + DB-agent dialogue on a SQLite BiomedSQL KB:
 
-| Metric | Mem-α-4B writer | Base Qwen3-4B writer |
-|--------|----------------:|---------------------:|
-| Overall micro | 0.3255 | **0.3376** |
-| Category macro | 0.2936 | **0.3112** |
-| Non-adversarial micro | 0.1841 | **0.2030** |
-| Adversarial | **0.8139** | 0.8027 |
+| System | EX |
+|--------|---:|
+| **Ours** | **69.2%** |
+| BMSQL (paper) | 62.6% |
+| Gemini-3-Pro (paper) | 58.1% |
 
-Honest takeaway: under this frozen inference-only protocol, the RL-trained writer does **not** dominate the base writer on overall micro-F1; adversarial is slightly better for Mem-α. See report for category breakdowns and limitations.
+Details, caveats, and code: [`sql-agent/README.md`](sql-agent/README.md). Metrics: [`sql-agent/metrics/summary.json`](sql-agent/metrics/summary.json).
 
-## A-Mem metrics protocol
+## Memory tracks (honest)
 
-Six primary metrics (see track README / docs): (1) category F1 / adversarial abstention, (2) gold-evidence coverage, (3) memory-build & QA latency, (4) tokens by phase, (5) semantic footprint + link counts, (6) context overflow / utilization. Partial runs are labeled partial. This is an experimental adaptation, **not** a claim of exact paper numerical reproduction.
+**Mem-α LoCoMo** (committed report): overall micro **0.3255 (Mem-α)** vs **0.3376 (base)** — RL writer does **not** dominate under this frozen inference-only protocol; adversarial is slightly better for Mem-α (0.8139 vs 0.8027). That negative/nuanced result is intentional transparency.
 
-## Related work (not in this repo)
+**A-Mem:** protocol + harness for long-context memory agents with latency/token/footprint metrics; partial runs labeled partial.
 
-Agentic BiomedSQL controller+DB baseline (local SQLite, 546-question sample) used as a separate agentic eval line — ask for `crack_biomedsql` privately if needed.
+## Limitations
 
-## Limitations / non-claims
+- Memory tracks exclude weights and raw shards; SQL agent excludes raw jsonl / DB dumps.
+- Cross-paper baseline comparisons always state stack differences.
+- HPC launchers assume Slurm-class environments.
 
-- Weights, raw completion dumps, and large result shards are excluded; regenerate via scripts + HF auth.
-- Mem-α study is inference-only (no training/reward updates) and uses official LoCoMo prompts/scoring with adapter bridges — not an end-to-end replica of every paper reader setting.
-- A-Mem CUDA stack assumes Slurm/HPC; laptop smoke tests are limited.
-- Absolute cluster paths have been parameterized; you must set local roots.
+## Reference papers
+
+[`reference_research_papers/`](reference_research_papers/) — BiomedSQL, agent memory, tool-use.
 
 ## License
 
-MIT for original packaging/scripts here. Upstream A-Mem / Mem-α / LoCoMo / model licenses still apply.
+MIT for original packaging here; upstream licenses apply to vendored/benchmark assets.
