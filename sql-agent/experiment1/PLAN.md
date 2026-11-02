@@ -5,7 +5,7 @@
 
 ## Why this experiment
 
-BiomedSQL (COLM 2026) shows a large gap: Gemini-3-Pro **58.1% EX**, their multi-step agent BMSQL **62.6% EX**, experts **~90%**. Failures are often scientific conventions (GWAS thresholds, effect direction, trial phase) that are not in the schema.
+BiomedSQL (ICLR 2026 workshop) shows a large gap: Gemini-3-Pro **58.1% EX**, their multi-step agent BMSQL **62.6% EX**, experts **~90%**. Failures are often scientific conventions (GWAS thresholds, effect direction, trial phase) that are not in the schema.
 
 Our ChEMBL exp9 architecture already separates **agreeing what to find** from **executing the search**:
 

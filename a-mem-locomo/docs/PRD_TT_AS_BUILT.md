@@ -2,7 +2,7 @@
 
 Owner: Ashutosh Ganguly. Audit date: 10 September 2026 (UTC). Status: implementation specification, not completed benchmark results.
 
-## 1. Objective and authorized scope
+## 1. Objective and scope
 
 Run one open-weight language model with A-Mem on the complete LoCoMo benchmark, retain enough evidence to locate individual failures, and develop research hypotheses from measured behavior. The experiment is Llama-3.2-3B-Instruct, not the earlier proposed Qwen models. No training, extra benchmarks, model sweep, no-memory baseline, or publication is included. A single run cannot establish that A-Mem improves over a baseline, that a failure has a particular cause, or that an idea is publishable.
 

@@ -1,9 +1,6 @@
-# Reference research papers (SQL agent)
+# Reference papers (links)
 
-See also the repo-level [`../../reference_research_papers/`](../../reference_research_papers/) for ReAct / MemGPT / Generative Agents / Toolformer.
-
-| Paper | Why |
-|-------|-----|
-| `BiomedSQL_COLM2026.pdf` | Benchmark definition + Gemini / BMSQL EX baselines |
-| `Controller-Guided_ChEMBL_Search_for_Agentic_Molecular_Design.pdf` | Controller–DB dialogue prior |
-| `our_technical_note.pdf` | Local write-up of this experiment |
+- BiomedSQL — ICLR 2026 workshop biomedical text-to-SQL benchmark (use authors’ canonical page / arXiv when citing)
+- [ReAct](https://arxiv.org/abs/2210.03629)
+- [Toolformer](https://arxiv.org/abs/2302.04761)
+- [Spider](https://arxiv.org/abs/1809.08887) (text-to-SQL lineage)

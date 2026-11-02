@@ -1,72 +1,56 @@
 # sql-agent (BiomedSQL)
 
-Controller + DB-agent dialogue for biomedical text-to-SQL on a **local SQLite** rewrite of the BiomedSQL knowledge base.
+Controller + DB-agent dialogue for biomedical text-to-SQL on a **local SQLite** copy of the BiomedSQL knowledge base.
 
-## Claim
+**Author:** Ashutosh Ganguly — AI researcher @ MBZUAI.
 
-On the **546-question / 38-template** BiomedSQL-style eval, our two-agent stack reaches **69.2% EX** — above the BiomedSQL paper’s reported **Gemini-3-Pro 58.1% EX** and **BMSQL 62.6% EX** under our protocol (see caveats).
+## What this is
 
-## Headline metrics
+A two-agent stack (controller agrees on the scientific brief; DB agent runs bounded SQL ReAct) evaluated on **546 BiomedSQL-style questions / 38 templates**.
 
-From [`metrics/summary.json`](metrics/summary.json) (computed from the full merged run; raw jsonl not shipped):
+## Numbers (read carefully)
 
-| System | Exact-match EX |
-|--------|---------------:|
-| **Ours (controller + DB agent, Qwen3.8-27B)** | **69.2%** |
-| BiomedSQL paper — BMSQL multi-step agent | 62.6% |
-| BiomedSQL paper — Gemini-3-Pro | 58.1% |
+| System | Exact-match EX | Model / stack |
+|--------|---------------:|---------------|
+| Ours (controller + DB agent) | **69.2%** | **Qwen3.8-27B** (vLLM), local SQLite |
+| BiomedSQL paper — BMSQL | 62.6% | **GPT-o3-mini** (paper setup) |
+| BiomedSQL paper — Gemini-3-Pro | 58.1% | Gemini (paper setup) |
 
-Also: mean JAC **71.0%**, mean SER **~0.002**, syntax_ok **high**. Per-template rollup: `metrics/per_template_ex.csv`.
+These are **not matched-model comparisons**. A large part of the gap vs 62.6% may be the backbone LLM, not the controller. The matched ablation (`--no-controller`, same model/DB/grader) is implemented but **not yet re-run** — see `metrics/controller_ablation.json`.
 
-**Δ EX vs Gemini ≈ +11.1 pp; vs BMSQL ≈ +6.6 pp.**
+Cost proxies on the full run (`metrics/cost_table.json`): mean talk_turns ≈ 1.10, mean SQL queries ≈ 2.57, mean rounds ≈ 2.30.
+
+Gold audit: `metrics/gold_audit.json` — 546 rows, 0 malformed under strict parse (105 empty gold lists).
 
 ## Method
 
-1. **Controller** owns the scientific need (entities, thresholds, success criteria) and rates satisfaction.
-2. **DB agent** restates the brief, clarifies, then runs a read-only SQL ReAct loop against schema + SQLite.
-3. Agreement gate before search; bounded revise rounds on error/empty results.
-4. Graded with EX / JAC / SER aligned to the BiomedSQL evaluation spirit (`experiment1/eval_metrics.py`).
-
-Architecture notes: `experiment1/PLAN.md`, prompts: `experiment1/PROMPTS.md`.
+1. Controller drafts the scientific need.
+2. Brief talk until agreement (skipped with `--no-controller`).
+3. DB agent SQL ReAct against schema + SQLite.
+4. Grade with EX / JAC / SER (`experiment1/eval_metrics.py`).
 
 ## Setup
 
 ```bash
-# Build SQLite KB once (parquet → sqlite); see experiment1/build_sqlite.py
 python3 experiment1/build_sqlite.py --parquet-dir <data> --out biomedsql.sqlite --only-core
-
-# Smoke / full runs need a local OpenAI-compatible LLM endpoint (we used vLLM Qwen3.8-27B)
 python3 experiment1/run.py --one-per-template
+python3 experiment1/run.py --no-controller --one-per-template   # matched ablation
 ```
 
-Weights and the 73MB raw run dumps are **not** in git. Metrics summaries are.
+## Venue note
 
-## Papers in-tree
+BiomedSQL is an **ICLR 2026 workshop** dataset/paper. Prefer the authors’ official page for the canonical citation.
 
-- [`papers/BiomedSQL_COLM2026.pdf`](papers/BiomedSQL_COLM2026.pdf) — benchmark + published baselines
-- [`papers/Controller-Guided_ChEMBL_Search_for_Agentic_Molecular_Design.pdf`](papers/Controller-Guided_ChEMBL_Search_for_Agentic_Molecular_Design.pdf) — controller/DB dialogue lineage
-- [`papers/our_technical_note.pdf`](papers/our_technical_note.pdf) — local technical write-up
+## Limitations
 
+- SQLite rewrite ≠ paper BigQuery deployment.
+- Cross-paper EX numbers mix different models and stacks.
+- Raw jsonl / DB dumps not shipped; summary metrics only.
 
+## References (links)
 
-## Evaluation hardening (ITER 3)
-
-- **Gold audit** (`metrics/gold_audit.json`): 546 rows, gold column `execution_results`, **malformed=0** (strict parse), empty gold lists=105 (valid for some templates). `pass=True`.
-- **Grader**: `eval_metrics.parse_gold_strict` / `GoldParseError` — fail loud on malformed gold when `strict_gold=True`.
-- **Cost proxies** (full system, n=546): mean talk_turns=1.10, mean SQL queries=2.57, mean rounds=2.30, EX=0.692. Token/latency not logged in exp1 merge — next run will record them.
-- **Controller ablation**: `--no-controller` skips talk and searches from the raw question (matched model/DB/grader). Protocol in `experiment1/ABLATION.md`; `metrics/controller_ablation.json` awaits the matched re-run numbers.
-
-```bash
-python experiment1/run.py --no-controller --one-per-template
-```
-
-## Limitations / non-claims
-
-- Local **SQLite** KB + schema projection is not identical to the paper’s BigQuery deployment.
-- Model stack (**Qwen3.8-27B** via vLLM) differs from Gemini / BMSQL paper configurations — treat baseline deltas as **cross-system** comparisons with a fixed public question set, not a bitwise reproduction.
-- EX uses our grader on execution results; always cite `metrics/summary.json` when quoting numbers.
-- Dataset tables / DB file are rebuilt locally (licensing).
+See [`../reference_research_papers/`](../reference_research_papers/) and the BiomedSQL / ReAct / tool-use abstracts linked there.
 
 ## License
 
-MIT for agent code here. Upstream BiomedSQL / model / data licenses still apply.
+MIT for agent code. Upstream dataset / model licenses still apply.

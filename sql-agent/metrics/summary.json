@@ -1,5 +1,5 @@
 {
-  "benchmark": "BiomedSQL-style local SQLite eval (546 questions, 38 templates)",
+  "benchmark": "BiomedSQL-style local SQLite eval (546 questions, 38 templates); ICLR 2026 workshop dataset",
   "n_questions": 546,
   "n_templates": 38,
   "mean_EX": 0.6923076923076923,
@@ -11,10 +11,8 @@
   "paper_baselines_EX": {
     "Gemini-3-Pro_BiomedSQL_paper": 0.581,
     "BMSQL_BiomedSQL_paper": 0.626,
-    "note": "Baselines from BiomedSQL COLM 2026 paper; our run uses controller+DB agent on local SQLite rewrite with Qwen3.8-27B \u2014 not an identical API/stack replication."
+    "note": "Baselines from the BiomedSQL paper (ICLR 2026 workshop). BMSQL 62.6% used GPT-o3-mini; our 69.2% used Qwen3.8-27B on a local SQLite rewrite. Not a matched-model comparison. Controller ablation still pending."
   },
-  "delta_EX_vs_Gemini": 0.11130769230769233,
-  "delta_EX_vs_BMSQL": 0.06630769230769229,
   "per_template_mean_EX": {
     "Q1": 0.4166666666666667,
     "Q10": 0.75,
